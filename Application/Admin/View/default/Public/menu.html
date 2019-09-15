@@ -1,0 +1,33 @@
+<block name="side">
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav" id="side-menu">
+        <block name="sidebar">
+          <notempty name="_extra_menu">
+            {// 动态扩展菜单 //}
+            {:extra_menu($_extra_menu,$__MENU__)}
+          </notempty>
+          <volist name="__MENU__.child" key="k" id="sub_menu">
+            <li id="subnav" class="{$sub_menu.id} {$sub_menu|get_current_active_url}">
+              <notempty name="sub_menu">
+                <notempty name="key">
+                  <a href="javascript:;">
+                    <h5><i class="fa fa-sitemap fa-fw"></i>&nbsp;{$key}</h5>
+                    <span class="fa arrow" style="margin-top:-27px;"></span>
+                  </a>
+                </notempty>
+                <ul class="nav nav-second-level">
+                  <volist name="sub_menu" id="menu">
+                    <li class="" >
+                        <a href="{$menu.url|U}"><i class="fa fa-table fa-fw"></i>&nbsp;&nbsp;{$menu.title}</a>
+                    </li>
+                  </volist>
+                </ul>
+              </notempty>
+            </li>
+          </volist>
+        </block>
+      </ul>
+    </div>
+  </nav>
+</block>

@@ -1,0 +1,87 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="main-title">
+    <h2>新增管理员</h2>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      新增
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <form action="{:U()}" method="post"  role="form" class="form col-lg-6">
+          <div class="form-group">
+            <label class="item-label">管理员名：<span class="check-tips">（请输入管理员名）</span></label>
+            <input type="text" name="username" class="form-control"  autocomplete="off" value="{$list.0.username}"/>
+          </div>
+          <div class="form-group">
+            <label class="item-label">密码<span class="check-tips">（管理员密码不能少于4位）</span></label>
+            <input type="password" class="text input-large form-control" name="password" value="">
+          </div>
+          <div class="form-group">
+            <label class="item-label">确认密码</label>
+            <input type="password" class="text input-large form-control" name="okpassword" value="">
+          </div>
+          <div class="form-group">
+            <label class="item-label">昵称：<span class="check-tips">（请输入昵称）</span></label>
+            <input type="text" name="nickname" class="form-control" autocomplete="off" value="{$list.0.nickname}"/>
+          </div>
+          <div class="form-group">
+            <label class="item-label">管理员邮箱：<span class="check-tips">（管理员邮箱，用于找回密码等安全操作）</span></label>
+            <input type="text" name="email" class="form-control" autocomplete="off" value="{$list.0.email}"/>
+          </div>
+          <div class="form-group">
+            <label class="item-label">管理员手机：<span class="check-tips">（管理员手机，用于找回密码等安全操作）</span></label>
+            <input type="text" name="mobile" class="form-control" autocomplete="off" value="{$list.0.mobile}"/>
+          </div>
+          <div class="form-group">
+            <label class="item-label">性别：<span class="check-tips">（请选择性别）</span></label>
+            <select name="sex" class="form-control" autocomplete="off">
+              <option value="0"></option>
+              <option value="1">男</option>
+              <option value="2">女</option>
+              <option value="3">不显示</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="item-label">出生年月：<span class="check-tips">（请选择出生年月）</span></label>
+            <input type="text" name="birthday" class="form-control" autocomplete="off" value="{$list.0.birthday}"/>
+          </div>
+          <div class="form-group">
+            <label class="item-label">QQ：<span class="check-tips">（请输入新QQ）</span></label>
+            <input type="text" name="qq" class="form-control" autocomplete="off" value="{$list.0.qq}"/>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-default submit-btn ajax-post" id="submit" type="submit" target-form="form">确 定</button>
+            <button class="btn btn-default btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+          </div>
+        </form>
+      </div><!-- /.row (nested) -->
+    </div><!-- /.panel-body -->
+  </div><!-- /.panel -->
+</block>
+
+<block name="script">
+  <script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+  <link href="__STATIC__/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
+  <link href="__STATIC__/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="__STATIC__/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="__STATIC__/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+  <script type="text/javascript">
+    $(function()
+    {
+      $('select[name="sex"]').val('{$list.0.sex}');
+
+      $('input[name="birthday"]').datetimepicker(
+      {
+        format: 'yyyy-mm-dd',
+        language: "zh-CN",
+        minView: 2,
+        autoclose: true
+      });
+    })
+  </script>
+</block>

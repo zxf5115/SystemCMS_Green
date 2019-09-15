@@ -1,0 +1,107 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">编辑钩子</h1>
+      <p class="description">显示当前系统中所以有效的用户信息</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+          <div class="panel-options">
+            <a href="#" data-toggle="panel">
+              <span class="collapse-icon">&ndash;</span>
+              <span class="expand-icon">+</span>
+            </a>
+            <a href="#" data-toggle="remove">
+              &times;
+            </a>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <form action="{:U('Hooks/edit')}" method="post"  role="form" class="form form-horizontal validate">
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">钩子名称</label>
+
+              <div class="col-sm-10">
+                <input name="name" value="{$data.name}" type="text" class="form-control" id="field-1" placeholder="请输入需要在程序中先添加钩子，否则无效" data-validate="required" data-message-required="需要在程序中先添加钩子，否则无效">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">钩子描述</label>
+
+              <div class="col-sm-10">
+                <textarea name="description" id="field-5" class="form-control" cols="5" placeholder="请输入钩子的描述信息">{$data.description}</textarea>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">钩子类型</label>
+
+              <div class="col-sm-10">
+                <select name="type" class="form-control" placeholder="请选择钩子类型，区分钩子的主要用途">
+                  <volist name=":C('HOOKS_TYPE')" id="vo">
+                    <option value="{$key}" <eq name="data.type" value="$key"> selected</eq>>{$vo}</option>
+                  </volist>
+                </select>
+              </div>
+            </div>
+
+            <div class="hidden">
+              <input type="hidden" name="id" value="{$data.id}">
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-success ajax-post" target-form="form">提 交</button>
+                <button type="reset" class="btn btn-white btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script src="__JS__/jquery-validate/jquery.validate.min.js"></script>
+  <script src="__JS__/resizeable.js"></script>
+  <script src="__JS__/inputmask/jquery.inputmask.bundle.js"></script>
+</block>

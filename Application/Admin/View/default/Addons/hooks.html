@@ -1,0 +1,66 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <!-- 标题栏 -->
+  <div class="main-title">
+    <h2>钩子列表</h2>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">   
+      <div class="fl">
+        <?php if (IS_ROOT){ ?>
+          <button  url="{:U('addhook')}" id="add-group" class="btn btn-default btn-add " >新 增</button>
+        <?php } ?>
+        <!-- 
+        <button  url="{:U('changestatus',array('method'=>'resumeGroup'))}" class="btn btn-default ajax-post" target-form="ids" >启 用</button>
+        <button  url="{:U('changestatus',array('method'=>'forbidGroup'))}" class="btn btn-default ajax-post" target-form="ids" >禁 用</button>
+        <button  url="{:U('changestatus',array('method'=>'deleteGroup'))}" class="btn btn-default ajax-post confirm" target-form="ids" >删 除</button> -->
+      </div>  
+    </div><!-- /.panel-heading -->    
+    <div class="panel-body">
+      <div class="table-responsive">    
+        <table class="table table-striped table-bordered table-hover dataTables" id="dataTables"><!-- 必须设定表格的id == -->
+          <thead>
+            <tr>
+              <th class="row-selected row-selected" style="width:45px;">
+              	<input class="check-all" type="checkbox"/>
+              </th>
+              <th>ID</th>
+              <th>名称</th>
+              <th>描述</th>
+              <th>类型</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <notempty name="_list">
+              <volist name="_list" id="vo">
+                <tr>
+                  <td><input class="ids" type="checkbox" name="id[]" value="{$vo.id}" /></td>
+                  <td>{$vo.id}</td>
+                  <td><a href="{:U('edithook?id='.$vo['id'])}">{$vo.name}</a></td>
+                  <td>{$vo.description}</td>
+                  <td>{$vo.type_text}</td>
+                  <td>
+                    <a title="编辑" href="{:U('edithook?id='.$vo['id'])}">编辑</a>
+                    <a class="confirm ajax-get" title="删除" href="{:U('delhook?id='.$vo['id'])}">删除</a>
+                  </td>  
+                </tr>
+              </volist>
+            <else/>
+              <td colspan="6" class="text-center"></td>
+            </notempty>                 
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive --> 
+    </div><!-- /.panel-body -->
+  </div><!-- /.panel -->            
+</block>
+
+<block name="script">
+  <script type="text/javascript" charset="utf-8">
+
+  </script>
+
+</block>

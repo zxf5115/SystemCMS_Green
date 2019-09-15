@@ -1,0 +1,74 @@
+<extend name="Public/base"/>
+
+<block name="style">
+  <link href="__CSS__/site.css" rel="stylesheet" />
+  <link href="__STATIC__/css/share.css" rel="stylesheet" />
+</block>
+
+<block name="body">
+  <div class="row">
+    <div class="span8">
+      <h1>{$meta_title}</h1>
+    </div>
+    <div class="span4">
+      <div class="actual-section">
+        <a href="{:U('Index/index')}" >首页</a> > {$meta_title}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>{$list.title}</h2>
+      <div>
+        <span class="p-r-10">{$list.create_time|friendlyDateChineseStyle}</span>
+        <span class="p-r-10"><i class="fa fa-user-circle-o"></i> {$list.founder}</span>
+        <span class="p-r-10"><i class="fa fa-tags"></i> {$list.label}</span>
+        <span class="p-r-10"><i class="fa fa-list"></i> {$list.category}</span>
+      </div>
+      <div>
+        {$list.content}
+      </div>
+      <div id="share"></div>
+    </div>
+  </div>
+
+  <div class="space30"></div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>其他作品</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <volist name="item" id="vo">
+      <a href="{:U('Item/detail', array('id'=>$vo['id']))}">
+        <div class="span3 square-1">
+          <div class="img-container">
+            <img src="{$vo.picture}" style="height:200px">
+            <div class="img-bg-icon"></div>
+          </div>
+          <h3>{$vo.title}</h3>
+          <div>{$vo.content}</div>
+        </div>
+      </a>
+    </volist>
+  </div>
+</block>
+
+<block name="script">
+  <script type="text/javascript" >
+    $(function()
+    {
+      $("#share").socialShare(
+      {
+        titile:'123131232132131',
+        content: 'FDSASDFASDFASDFASDFSDAFASDF',
+        url:'http://www.jq22.com/jquery-info4685',
+        pic:''
+      });
+    });
+  </script>
+  <script type="text/javascript" src="__STATIC__/js/share.js" charset="utf-8"></script>
+</block>

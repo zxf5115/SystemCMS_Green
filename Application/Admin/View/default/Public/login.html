@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <include file="Public/head"/>
+</head>
+<body class="page-body login-page">
+
+  <div class="login-container">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+
+        <!-- Errors container -->
+        <div class="errors-container">
+
+
+        </div>
+
+        <!-- Add class "fade-in-effect" for login form effect -->
+        <form method="post" role="form" id="login" class="login-form fade-in-effect">
+
+          <div class="login-header">
+            <a href="{:U('Index/index')}" class="logo">
+              <!-- <img src="__IMG__/logo@2x.png" alt="" width="80" /> -->
+              <span style="color:#fff;font-size:1.5em">{:C('WEB_SITE_TITLE')}</span>
+              <span>登 录</span>
+            </a>
+
+            <p>亲爱的用户，登录进入管理系统！</p>
+          </div>
+
+
+          <div class="form-group">
+            <!-- <label class="control-label" for="username">用户名</label> -->
+            <input type="text" class="form-control input-dark" name="username" id="username" autocomplete="off" placeholder="用户名"/>
+          </div>
+
+          <div class="form-group">
+            <!-- <label class="control-label" for="password">密码</label> -->
+            <input type="password" class="form-control input-dark" name="password" id="password" autocomplete="off" placeholder="密码"/>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-dark  btn-block text-left">
+              <i class="fa-lock"></i>
+              登录
+            </button>
+          </div>
+
+          <div class="login-footer">
+            <a href="#">忘记了你的密码？</a>
+
+            <div class="info-links">
+              <a href="#">服务条款</a> -
+              <a href="#">隐私政策</a>
+            </div>
+
+          </div>
+
+        </form>
+
+        <!-- External login -->
+        <!-- <div class="external-login">
+          <a href="#" class="facebook">
+            <i class="fa-facebook"></i>
+            Facebook Login
+          </a>
+
+
+          <a href="#" class="twitter">
+            <i class="fa-twitter"></i>
+            Login with Twitter
+          </a>
+
+          <a href="#" class="gplus">
+            <i class="fa-google-plus"></i>
+            Login with Google Plus
+          </a>
+
+        </div> -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- JS文件 -->
+  <include file="Public/script"/>
+
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($)
+    {
+      // 显示登录表单
+      setTimeout(function(){ $(".fade-in-effect").addClass('in'); }, 1);
+
+      // 验证和Ajax提交
+      $("form#login").validate({
+        rules: {
+          username: {
+            required: true
+          },
+
+          password: {
+            required: true
+          }
+        },
+
+        messages: {
+          username: {
+            required: '请输入您的账号名.'
+          },
+
+          password: {
+            required: '请输入您的密码.'
+          }
+        },
+
+        // 通过AJAX表单处理
+        submitHandler: function(form)
+        {
+          // 填补进度条到70%(就一个给定值)
+          show_loading_bar(70);
+
+          var opts = {
+            "closeButton": true,
+            "debug": false,
+            "positionClass": "toast-top-full-width",
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+          };
+
+          $.ajax(
+          {
+            url: "{:U('login')}",
+            method: 'POST',
+            dataType: 'json',
+            data:
+            {
+              do_login: true,
+              username: $(form).find('#username').val(),
+              password: $(form).find('#password').val(),
+            },
+            success: function(resp)
+            {
+              show_loading_bar(
+              {
+                delay: .5,
+                pct: 100,
+                finish: function()
+                {
+                  // 成功登录后页面重定向(当进度条达到100%)
+                  if(resp.status)
+                  {
+                    window.location.href = resp.url;
+                  }
+                  else
+                  {
+                    updateAlert('登录失败！','error');
+                    // $password.select();
+                  }
+                }
+              });
+            }
+          });
+        }
+      });
+
+      // Set Form focus
+      $("form#login .form-group:has(.form-control):first .form-control").focus();
+    });
+  </script>
+</body>
+</html>

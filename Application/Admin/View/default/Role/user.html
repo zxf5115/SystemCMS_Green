@@ -1,0 +1,103 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+	  <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div style="float:left;">
+        <button class="btn btn-turquoise btn-add " id="action_add" url="{:U('Role/visit', array('rid'=> I('rid')))}">
+          访问授权
+        </button>
+
+        <button class="btn btn-info btn-add " id="action_add" url="javascript:;">
+          成员列表
+        </button>
+      </div>
+      <div style="float:left;margin-left:10px;">
+        <select name="role" class="form-control" >
+          <volist name="role" id="vo">
+            <option value="{:U('Role/user',array('rid'=>$vo['id']))}" <eq name="vo['id']" value="$current['id']">selected</eq> >{$vo.title}</option>
+          </volist>
+        </select>
+      </div>
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered table-striped" id="dataTables">
+        <thead>
+          <tr>
+            <th class="">用户编号</th>
+            <th class="">用户名</th>
+            <th class="">最后登录时间</th>
+            <th class="">最后登录IP</th>
+            <th class="">状态</th>
+            <th class="">操作</th>
+          </tr>
+        </thead>
+        <tbody class="middle-align">
+          <volist name="list" id="vo">
+            <tr>
+              <td>{$vo.id} </td>
+              <td>{$vo.username}</td>
+              <td>
+                <span>{$vo.last_login_time|time_format}</span>
+              </td>
+              <td>
+                <span>{$vo.last_login_ip|long2ip}</span>
+              </td>
+              <td>{$vo.status_text}</td>
+              <td>
+                <a href="{:U('Role/removeUser', array('uid'=>$vo['id'], 'rid'=>I('rid')))}" class='btn btn-info btn-sm btn-icon icon-left ajax-get'>解除授权</a>
+              </td>
+            </tr>
+          </volist>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script type="text/javascript" charset="utf-8">
+    $('select[name=role]').change(function()
+    {
+      location.href = this.value;
+    });
+  </script>
+</block>

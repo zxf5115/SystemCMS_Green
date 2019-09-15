@@ -1,0 +1,202 @@
+[ 2017-03-27T16:42:20+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002280s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013058s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0613s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `publicity` [ RunTime:0.1671s ]
+SQL: SELECT `id`,`title`,`picture` FROM `publicity` WHERE `status` = 1 ORDER BY sort ASC LIMIT 5   [ RunTime:0.0035s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0205s ]
+SQL: SELECT `id` FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0323s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\Demo\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\Demo\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\Demo\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\Demo\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\Demo\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0036s ]
+SQL: SELECT `id`,`title`,`content` FROM `note` WHERE `status` = 1 ORDER BY create_time DESC  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0245s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 2   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007237s ]
+
+[ 2017-03-27T16:42:28+08:00 ] ::1 /Home/Item/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001739s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.1317s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,9   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\Demo\Application\Home\Controller\ItemController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0654s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 1 ORDER BY id ASC  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0358s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0018s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0107s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0020s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\Demo\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0022s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0121s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000470s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001499s ]
+
+[ 2017-03-27T16:42:29+08:00 ] ::1 /Home/Item/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001944s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002100s ]
+
+[ 2017-03-27T16:42:34+08:00 ] ::1 /Home/Contact/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001966s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\Demo\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0184s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: list E:\Workspace\PHP\Demo\Application\Home\Controller\ContactController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-03-27T16:42:35+08:00 ] ::1 /Home/Contact/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001736s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001877s ]
+
+[ 2017-03-27T16:43:02+08:00 ] ::1 /Home/Contact/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001978s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+NOTIC: [8] Undefined variable: list E:\Workspace\PHP\Demo\Application\Home\Controller\ContactController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+

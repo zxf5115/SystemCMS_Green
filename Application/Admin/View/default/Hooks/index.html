@@ -1,0 +1,144 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">钩子列表</h1>
+      <p class="description">显示当前系统中所以有效的用户信息</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <button class="btn btn-turquoise btn-add " id="action_add" url="{:U('Hooks/add')}">
+      新 增
+      </button>
+
+      <button class="btn btn-secondary ajax-post" url="{:U('Hooks/changeStatus',array('method'=>'resume'))}" target-form="ids">
+      启 用
+      </button>
+
+      <button class="btn btn-red ajax-post" url="{:U('Hooks/changeStatus',array('method'=>'forbid'))}" target-form="ids">
+      禁 用
+      </button>
+
+      <button class="btn btn-blue ajax-post confirm" url="{:U('Hooks/changeStatus',array('method'=>'delete'))}" target-form="ids">
+      删 除
+      </button>
+
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered table-striped" id="dataTables">
+        <thead>
+          <tr>
+            <th class="row-selected row-selected">
+              <input class="check-all cbr" type="checkbox"/>
+            </th>
+            <th class="">编号</th>
+            <th class="">名称</th>
+            <th class="">描述</th>
+            <th class="">类型</th>
+            <th class="">状态</th>
+            <th class="">操作</th>
+          </tr>
+        </thead>
+        <tbody class="middle-align"></tbody>
+      </table>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <!-- Imported styles on this page -->
+  <link rel="stylesheet" href="__JS__/datatables/dataTables.bootstrap.css">
+
+  <script src="__JS__/datatables/js/jquery.dataTables.min.js"></script>
+  <!-- Imported scripts on this page -->
+  <script src="__JS__/datatables/dataTables.bootstrap.js"></script>
+  <script src="__JS__/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+  <script src="__JS__/datatables/tabletools/dataTables.tableTools.min.js"></script>
+  <script type="text/javascript" src="__JS__/datatables/custom/config.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($)
+    {
+      var dataTable = handle();
+
+      $("#dataTables").dataTable($.extend(
+      {
+        "language": { "url": "__LANGUAGE__/DataTables/zh_CN.txt" },
+
+        "ajax": "{:U('Hooks/index')}",
+
+
+        "columns":
+        [
+          init.datatable.checkbox,
+          { "data": "id" },
+          { "data": "name" },
+          { "data": "description" },
+          { "data": "type" },
+          { "data": "status" },
+          dataTable.handle
+        ],
+      }, init.datatable.option)).api();
+    });
+
+    function handle()
+    {
+      var dataTable =
+      {
+        // 操作
+        handle :
+        {
+          "mDataProp": "id",
+          "fnCreatedCell": function (nTd, sData, oData, iRow, iCol)
+          {
+            $(nTd).html("<a class='btn btn-info btn-sm btn-icon icon-left' href='{:U(\"Hooks/edit\",\"\",false)}/id/"+sData+"'>编辑</a> ");
+
+            if(oData.status == '启用')
+            {
+              $(nTd).append("<a onclick ='custom_opertion(\"forbid\",\""+iRow+"\");' url='{:U(\"Hooks/changeStatus?method=forbid\",\"\",false)}/id/"+sData+"' class='btn btn-red btn-sm btn-icon icon-left custom_forbid"+iRow+" confirm ajax-get '>禁用</a> ");
+            }
+            else
+            {
+              $(nTd).append("<a onclick ='custom_opertion(\"resume\",\""+iRow+"\");' url='{:U(\"Hooks/changeStatus?method=resume\",\"\",false)}/id/"+sData+"' class='btn btn-secondary btn-sm btn-icon icon-left custom_resume"+iRow+" confirm ajax-get'>启用</a> ");
+            }
+
+            $(nTd).append("<a onclick ='custom_opertion(\"delete\",\""+iRow+"\");' url='{:U(\"Hooks/changeStatus?method=delete\",\"\",false)}/id/"+sData+"' class='btn btn-blue btn-sm btn-icon icon-left custom_delete"+iRow+" confirm ajax-get'>删除</a>");
+          }
+        }
+      };
+
+      return dataTable;
+    }
+  </script>
+</block>

@@ -1,0 +1,80 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="row">
+    <div class="span9">
+      <h1>{$meta_title}</h1>
+    </div>
+    <div class="span3">
+      <div class="actual-section">
+        <a href="{:U('Index/index')}" >首页</a> > {$meta_title}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>服务范围</h2>
+      <p>{$list.content}</p>
+    </div>
+  </div>
+
+  <div class="row space30"></div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>服务</h2>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <volist name="list.merit" id="uo">
+      <volist name="uo" id="io">
+        <a href="{:U('Service/merit', array('id'=>$io['id']))}">
+          <div class="span4">
+            <div class="span1">
+              <img src="{$io.picture}" style="width:50px;height:50px;"/>
+            </div>
+            <div class="span2" style="margin-left:0px;">
+              <div >{$io.title}</div>
+              <div>{$io.content}</div>
+            </div>
+          </div>
+        </a>
+      </volist>
+
+      <div class="row space30"></div>
+    </volist>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>客户列表</h2>
+    </div>
+  </div>
+
+  <div class="slider2 flexslider">
+    <ul class="slides">
+    <volist name="list.client" id="vo">
+        <li>
+          <div class="row">
+            <volist name="vo" id="xo">
+              <div class="span3">
+                <a href="{$xo.url|set_url_format}" target="_blank">
+                  <div class="span3 square-1 padding-bottom-clear">
+                    <div class="img-container">
+                      <img src="{$xo.picture}" class="picture_format">
+                      <div class="img-bg-icon" ></div>
+                    </div>
+                    <h3 class="text-center"><strong>{$xo.title}</strong></h3>
+                  </div>
+                </a>
+              </div>
+            </volist>
+          </div>
+        </li>
+      </volist>
+    </ul>
+  </div>
+</block>

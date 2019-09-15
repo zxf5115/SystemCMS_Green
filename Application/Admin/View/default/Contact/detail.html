@@ -1,0 +1,91 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+          <div class="panel-options">
+            <a href="#" data-toggle="panel">
+              <span class="collapse-icon">&ndash;</span>
+              <span class="expand-icon">+</span>
+            </a>
+            <a href="#" data-toggle="remove">
+              &times;
+            </a>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <form action="javascript:;" method="post"  role="form" class="form form-horizontal">
+
+            <div class="form-group">
+              <label class="col-sm-2 text-right" for="field-1">姓名</label>
+
+              <div class="col-sm-10">
+                {$list.name}
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 text-right" for="field-1">电子邮箱</label>
+
+              <div class="col-sm-10">
+                {$list.email}
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 text-right" for="field-1">内容</label>
+
+              <div class="col-sm-10">
+                {$list.content}
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script src="__JS__/jquery-validate/jquery.validate.min.js"></script>
+  <script src="__JS__/resizeable.js"></script>
+  <script src="__JS__/inputmask/jquery.inputmask.bundle.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
+    Think.setValue('type',{$type|default=1});
+
+  </script>
+</block>

@@ -1,0 +1,141 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <button class="btn btn-turquoise btn-add " id="action_add" url="{:U('Person/add')}">
+      新 增
+      </button>
+
+      <button class="btn btn-blue ajax-post confirm" url="{:U('Person/changeStatus',array('method'=>'delete'))}" target-form="ids">
+      删 除
+      </button>
+
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <!-- 搜索 -->
+      <form id="form" class="row" action="javascript:;" url="{:U('Admin/Person/index')}" style="height:50px;">
+        <div class="col-xs-2">
+          <input class="form-control date_plugin_start" name="start_time" type="text" autocomplete="off" placeholder="开始日期" value="" >
+        </div>
+        <div class="col-xs-2">
+          <input class="form-control date_plugin_end" name="end_time" type="text" autocomplete="off" placeholder="结束日期" value="" >
+        </div>
+
+        <div class="col-xs-2">
+          <input name="search" class="form-control" type="text" placeholder="请输入人物名称">
+        </div>
+
+        <div class="col-xs-2">
+          <button type="submit" class="btn btn-info">查询</button>
+          <button type="reset" class="btn btn-white">重置</button>
+        </div>
+      </form>
+      <!-- 搜索END -->
+
+      <table class="table table-bordered table-striped" id="dataTables">
+        <thead>
+          <tr>
+            <th class="row-selected row-selected">
+              <input class="check-all cbr" type="checkbox"/>
+            </th>
+            <th class="col-xs-1">编号</th>
+            <th class="col-xs-7">人物名称</th>
+            <th class="col-xs-2">添加时间</th>
+            <th class="col-xs-2">操作</th>
+          </tr>
+        </thead>
+        <tbody class="middle-align">
+          <if condition = '!empty($list)'>
+           <volist name="list" key = "k" id = "vo" >
+            <tr class="odd" role="row">
+              <td>
+                <input type='checkbox' class='ids cbr' type='checkbox' name='id[]' value='{$vo.id}'>
+              </td>
+              <td>{$vo.id}</td>
+              <td>{$vo.title}</td>
+              <td>{$vo.create_time_format}</td>
+              <td>
+                <a class='btn btn-info btn-sm btn-icon icon-left' href="{:U('Person/edit', array('id'=>$vo['id']))}">编辑</a>
+
+                <a url="{:U('Person/changeStatus?method=delete', array('id'=>$vo['id']))}" class='btn btn-blue btn-sm btn-icon icon-left confirm ajax-get'>删除</a>
+              </td>
+            </tr>
+          </volist>
+        <else/>
+          <tr>
+            <td colspan='9' class="text-center">暂无数据...</td>
+          </tr>
+        </if>
+        </tbody>
+      </table>
+
+      <!--数据分页-->
+      <div class='row'>
+        <div class="float_right">
+          <div id="dataTables_paginate" class="dataTables_paginate paging_full_numbers">
+            <ul class="pagination">
+              <if condition = '!empty($list)'>
+                {$page}
+              </if>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script type="text/javascript" src="__JS__/custom/custom_function.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function()
+    {
+      var start_time = "{$set['start_time']}";
+      var end_time   = "{$set['end_time']}";
+
+      setDatePlugin('date_plugin_start', 'date_plugin_end');
+      setDatePlugin('date_plugin_end');
+
+      Think.setValue('search'    , "{$set['search']|default='undefined'}");
+      Think.setValue('start_time', start_time);
+      Think.setValue('end_time'  , end_time);
+    });
+  </script>
+</block>

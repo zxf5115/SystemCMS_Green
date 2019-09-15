@@ -1,0 +1,289 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <button class="btn btn-turquoise ajax-get" id="export">
+      立即备份
+      </button>
+
+      <button class="btn btn-secondary ajax-post confirm" url="{:U('Database/optimize')}" target-form="ids" id="optimize">
+      优化表
+      </button>
+
+      <button class="btn btn-red ajax-post confirm" url="{:U('Database/repair')}" target-form="ids" id="repair">
+      修复表
+      </button>
+
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <form id="export-form" method="post" action="{:U('Database/export')}">
+        <table class="table table-bordered table-striped" id="dataTables">
+          <thead>
+            <tr>
+              <th class="row-selected row-selected">
+                <input class="check-all cbr" type="checkbox"/>
+              </th>
+              <th class="">表名</th>
+              <th class="">数据量</th>
+              <th class="">数据大小</th>
+              <th class="">创建时间</th>
+              <th class="">备份状态</th>
+              <th class="">操作</th>
+            </tr>
+          </thead>
+          <tbody class="middle-align"></tbody>
+        </table>
+      </form>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+
+  <!-- Imported styles on this page -->
+  <link rel="stylesheet" href="__JS__/datatables/dataTables.bootstrap.css">
+
+  <script src="__JS__/datatables/js/jquery.dataTables.min.js"></script>
+
+
+  <!-- Imported scripts on this page -->
+  <script src="__JS__/datatables/dataTables.bootstrap.js"></script>
+  <script src="__JS__/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+  <script src="__JS__/datatables/tabletools/dataTables.tableTools.min.js"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($)
+    {
+      /*常量*/
+      var init =
+      {
+        datatable :
+        {
+          //DataTables初始化选项
+          option :
+          {
+            // 分页样式
+            "sPaginationType" : "full_numbers",
+
+            // 当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+            "deferRender": true,
+
+            // 是否打开客户端状态记录功能。这个数据是记录在cookies中的，打开了这个记录后，即使刷新一次页面，或重新打开浏览器，之前的状态都是保存下来的
+            'bStateSave': true,
+
+            // 当datatable获取数据时候是否显示正在处理提示信息。
+            "bProcessing": false,
+
+            // 客户端处理分页
+            "bServerSide": true,
+
+            // 当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+            "deferRender": true,
+
+            "aaSorting": [[ 1, "desc" ]],
+
+            "bSort": false,
+
+            // "columnDefs":[{
+            //             "orderable":false,//禁用排序
+            //             "targets":[1,7]   //指定的列
+            //             }],
+          },
+
+          //复选框单元格
+          checkbox :
+          {
+            "mDataProp": "table_name",
+            "fnCreatedCell": function (nTd, sData, oData, iRow, iCol)
+            {
+              $(nTd).html("<input type='checkbox' class='ids cbr' type='checkbox' name='tables[]' value='" + sData + "'>");
+            }
+          },
+        }
+      };
+
+
+      var dataTable = handle();
+
+      $("#dataTables").dataTable($.extend(
+      {
+        "language": { "url": "__LANGUAGE__/DataTables/zh_CN.txt" },
+        "ajax":"{:U('Database/index')}",
+
+        "columns":
+        [
+          init.datatable.checkbox,
+          { "data": "table_name" },
+          { "data": "table_rows" },
+          { "data": "data_length" },
+          { "data": "create_time" },
+          { "data": "table_name" },
+          dataTable.handle
+        ],
+      }, init.datatable.option)).api();
+    });
+
+
+
+    function handle()
+    {
+      var dataTable =
+      {
+        // 操作
+        handle :
+        {
+          "mDataProp": "table_name",
+          "fnCreatedCell": function (nTd, sData, oData, iRow, iCol)
+          {
+            $(nTd).html("<a class='btn btn-info btn-sm btn-icon icon-left ajax-get no-refresh' href='{:U(\"Database/optimize\",\"\",false)}/tables/"+sData+"'>优化表</a> ");
+
+            $(nTd).append("<a class='btn btn-blue btn-sm btn-icon icon-left ajax-get no-refresh' href='{:U(\"Database/repair\",\"\",false)}/tables/"+sData+"'>修复表</a> ");
+          }
+        }
+      };
+
+      return dataTable;
+    }
+
+    var $form = $("#export-form"), $export = $("#export"), tables
+    $optimize = $("#optimize"), $repair = $("#repair");
+
+    $optimize.add($repair).click(function()
+    {
+      $.post(this.href, $form.serialize(), function(data)
+      {
+        if(data.status)
+        {
+          updateAlert(data.info,'alert-success');
+        }
+        else
+        {
+          updateAlert(data.info,'alert-error');
+        }
+        setTimeout(function()
+        {
+          $('#top-alert').find('button').click();
+          $(that).removeClass('disabled').prop('disabled',false);
+        },1500);
+      }, "json");
+
+      return false;
+    });
+
+    $export.click(function()
+    {
+      $export.parent().children().addClass("disabled");
+
+      $export.html("正在发送备份请求...");
+
+      $.post(
+        $form.attr("action"),
+        $form.serialize(),
+        function(data)
+        {
+          if(data.status)
+          {
+            tables = data.tables;
+            $export.html(data.info + "开始备份，请不要关闭本页面！");
+            backup(data.tab);
+            window.onbeforeunload = function()
+            {
+              return "正在备份数据库，请不要关闭！";
+            }
+          }
+          else
+          {
+            updateAlert(data.info,'alert-error');
+            $export.parent().children().removeClass("disabled");
+            $export.html("立即备份");
+            setTimeout(function()
+            {
+              $('#top-alert').find('button').click();
+              $(this).removeClass('disabled').prop('disabled',false);
+            },1500);
+          }
+        },
+        "json"
+      );
+      return false;
+    });
+
+    function backup(tab, status)
+    {
+      status && showmsg(tab.id, "开始备份...(0%)");
+
+      $.get($form.attr("action"), tab, function(data)
+      {
+        if(data.status)
+        {
+          showmsg(tab.id, data.info);
+
+          if(!$.isPlainObject(data.tab))
+          {
+            $export.parent().children().removeClass("disabled");
+            $export.html("备份完成，点击重新备份");
+            window.onbeforeunload = function(){ return null }
+            return;
+          }
+          backup(data.tab, tab.id != data.tab.id);
+        }
+        else
+        {
+          updateAlert(data.info,'alert-error');
+          $export.parent().children().removeClass("disabled");
+          $export.html("立即备份");
+          setTimeout(function()
+          {
+            $('#top-alert').find('button').click();
+            $(that).removeClass('disabled').prop('disabled',false);
+         },1500);
+        }
+      }, "json");
+    }
+
+    function showmsg(id, msg)
+    {
+      $form.find("input[value=" + tables[id] + "]").closest("tr").find(".info").html(msg);
+    }
+
+  </script>
+</block>

@@ -1,0 +1,51 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title cf">
+		<h2>{$title}列表</h2>
+	</div>
+	<div class="panel panel-default">    
+    <div class="panel-heading">  
+      {$title}
+    </div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+      <div class="table-responsive">    
+        <table class="table table-striped table-bordered table-hover dataTables" id="dataTables"><!-- 必须设定表格的id == -->
+          <thead>
+            <tr>
+              <th class="row-selected row-selected" style="width:60px;">
+                <input class="check-all" type="checkbox"/>
+              </th>
+              <volist name="listKey" id="vo">
+								<th class="">{$vo}</th>
+							</volist>
+            </tr>
+          </thead>
+          <tbody>
+            <notempty name="custom_adminlist">
+              <volist name="_list" id="lv" key="vo">
+								<tr>
+									<td>
+										<input class="ids" type="checkbox" value="{$lv.id}" name="id[]">{$lv.id}
+									</td>
+									<volist name="listKey" id="lk">
+										<td>{$lv.$key}</td>
+									</volist>
+								</tr>
+							</volist>
+            <else />
+							<present name="custom_adminlist">
+								{$custom_adminlist}
+							</present>
+						</notempty>              
+          </tbody>
+        </table>
+      </div><!-- /.table-responsive --> 
+    </div><!-- /.panel-body -->
+  </div><!-- /.panel -->  
+</block>
+<block name="script">
+
+</block>

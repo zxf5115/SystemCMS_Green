@@ -1,0 +1,124 @@
+<extend name="Public/base"/>
+
+<block name="style">
+  <link href="__CSS__/site.css" rel="stylesheet" />
+  <link href="__STATIC__/css/share.css" rel="stylesheet" />
+</block>
+
+<block name="body">
+  <div class="row">
+    <div class="span9">
+      <h1>{$meta_title}</h1>
+    </div>
+    <div class="span3">
+      <div class="actual-section">
+        <a href="{:U('Index/index')}" >首页</a> > {$meta_title}
+      </div>
+    </div>
+  </div>
+	<div class="row">
+		<div class="span9">
+			<h2>我们的位置</h2>
+
+			<!-- Map -->
+			<div class="container">
+				<div class="row">
+					<div class="span9">
+						<div id="allmap" style="overflow:none; height:400px;"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row space30"></div>
+
+			<form action="{:U('Contact/add')}" method="post" role="form" class="form form-main validate">
+				<div class="row">
+					<div class="span5 gray4">
+						<span class="gray4">电子邮箱</span> <span class="red">*</span><br />
+						<input type="email" name="email" value="" required="required" placeholder="请输入您的联系邮箱" data-rule-email="true" data-msg-required="请输入您的联系邮箱" data-msg-email="请输入您正确的联系邮箱"><br />
+					</div>
+					<div class="span4">
+						姓名 <span class="red">*</span><br />
+						<input type="text" name="name" value="" required="required" placeholder="请输入您的姓名" data-msg-required="请输入您的姓名" minlength="2" data-msg-minlength="请输入您的姓名">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="span9 gray4">
+						内容 <span class="red">*</span><br>
+						<textarea name="content" required="required" placeholder="请输入您宝贵的意见" data-msg-required="请输入您宝贵的意见" minlength="6" data-msg-minlength="请输入您宝贵的意见"></textarea>
+					</div>
+				</div>
+
+				<div class="row space20"></div>
+
+				<div class="row">
+					<div class="span4">
+						<button class="btn ajax-post" type="submit" target-form="form">提交</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="span3">
+			<h2>地址</h2>
+			{:C('COMPANY_ADDRESS')}
+      <br/>
+      <br/>
+			<i class="fa fa-phone m-right10"></i> {:C('COMPANY_PHONE')}<br>
+			<i class="fa fa-envelope-o m-right10"></i> {:C('COMPANY_EMAIL')}<br>
+			<i class="fa fa-home m-right10"></i> {:C('COMPANY_WEBSITE')}<br>
+
+			<div class="row space30"></div>
+
+			<h2>信息</h2>
+			{:C('COMPANY_INTRO')}
+
+			<div class="row space30"></div>
+
+			<h2>社交</h2>
+			<div class="thanks">分享给需要的朋友吧，谢谢...</div>
+
+      <div id="share"></div>
+		</div>
+	</div>
+</block>
+
+<block name="script">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak={:C('BAIDU_MAP_KEY')}"></script>
+  <script type="text/javascript" src="__JS__/jquery-validate/jquery.validate.min.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function()
+    {
+      // 百度地图API功能
+      var map = new BMap.Map("allmap");
+      var point = new BMap.Point(25.0197250000,102.6856270000);
+      map.centerAndZoom(point,12);
+      // 创建地址解析器实例
+      var myGeo = new BMap.Geocoder();
+      // 将地址解析结果显示在地图上,并调整地图视野
+      myGeo.getPoint("{:C('COMPANY_ADDRESS')}", function(point){
+        if (point) {
+          map.centerAndZoom(point, 16);
+          map.addOverlay(new BMap.Marker(point));
+        }else{
+          alert("您选择地址没有解析到结果!");
+        }
+      }, "{:C('COMPANY_CITY')}");
+    });
+
+    $(function()
+    {
+      $("#share").socialShare(
+      {
+        titile:'123131232132131',
+        content: 'FDSASDFASDFASDFASDFSDAFASDF',
+        url:'http://www.jq22.com/jquery-info4685',
+        pic:''
+      });
+    });
+  </script>
+  <script type="text/javascript" src="__STATIC__/js/share.js" charset="utf-8"></script>
+</block>

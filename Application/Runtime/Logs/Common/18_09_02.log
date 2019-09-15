@@ -1,0 +1,14 @@
+[ 2018-09-02T11:09:50+08:00 ] 127.0.0.1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002521s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002637s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QingYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2018-09-02T11:09:51+08:00 ] 127.0.0.1 /img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001565s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QingYun\Application\Common\Common\api.php 第 42 行.
+

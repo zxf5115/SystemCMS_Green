@@ -1,0 +1,123 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="row">
+    <div class="span9">
+      <h1>{$meta_title}</h1>
+    </div>
+    <div class="span3">
+      <div class="actual-section">
+        <a href="{:U('Index/index')}" >首页</a> > {$meta_title}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span9">
+      <volist name="list" id="vo">
+	      <div class="note">
+	      	<if condition="$vo['picture'] != ''">
+		        <a href="{:U('Note/detail', array('id'=>$vo['id']))}">
+		          <img src="{$vo.picture}" class="picture">
+		        </a>
+	        </if>
+	        <!-- Space -->
+	        <div class="row space30"></div>
+
+	        <div class="row">
+	          <div class="span2">
+	            <div class="blog-icon-container hidden-phone">
+	              <div class="blog-icon">
+	                <i class="fa fa-{$vo.icon}"></i>
+	              </div>
+	            </div>
+	            <div class="blog-date">{$vo.create_time|friendlyDateChineseStyle}</div>
+
+	          </div>
+	          <div class="span7 post-d-info">
+	            <a href="{:U('Note/detail', array('id'=>$vo['id']))}">
+	            	<h2>{$vo.title}</h2>
+	            </a>
+	            <i class="fa fa-user-circle-o"></i> {$vo.founder}
+	            <i class="fa fa-tags"></i> {$vo.label}
+	            <i class="fa fa-list"></i> {$vo.category}
+	            <p>{$vo.content}</p>
+	            <a href="{:U('Note/detail', array('id'=>$vo['id']))}"></i> 查看更多</a>
+	            <div class="row space5"></div>
+	          </div>
+	        </div>
+	        <hr />
+	      </div>
+      </volist>
+
+      <div class="row space300"></div>
+
+      <!-- Paging -->
+      <div class="row">
+        <div class="span9">
+		      <div class="pagination">
+		        <ul>
+		          <if condition = '$list neq ""'>
+		            {$page}
+		          </if>
+		        </ul>
+		      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="span3">
+      <h2>搜索</h2>
+      <div class="search-box">
+        <a href="javascript:;" class="search-icon"><i class="fa fa-search"></i></a>
+        <input class="search" name="search" placeholder="请输入内容" >
+      </div>
+
+      <div class="row space30"></div>
+      <h2>分类</h2>
+      <ul class="list-c">
+      	<volist name="category" id="vo">
+        	<li>
+	        	<i class="fa fa-chevron-right"></i>
+	        	<a class="{$set['cid'] == $vo['id'] ? 'active' : ''}" href="{:U('Note/index', array('cid'=>$vo['id']))}">{$vo.title}</a>
+        	</li>
+        </volist>
+      </ul>
+
+      <div class="row space30"></div>
+      <h2>标签</h2>
+      <div class="list-t">
+	      <volist name="label" id="vo">
+	      	<a href="{:U('Note/index', array('lid'=>$vo['id']))}">
+	      		<div class="tag {$set['lid'] == $vo['id'] ? 'active' : ''}">{$vo.title}</div>
+	      	</a>
+	      </volist>
+      </div>
+      <div class="row space30"></div>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+		$('document').ready(function()
+		{
+			$('input[name="search"]').val("{$set['search']}");
+
+			$('.fa-search').bind('click', function()
+			{
+				var search = $("input[class='search']").val();
+
+				if(search)
+				{
+					window.location.href="{:U('Note/index')}/search/"+search;
+				}
+				else
+				{
+					window.location.href="{:U('Note/index')}";
+				}
+
+			});
+		});
+	</script>
+</block>

@@ -1,0 +1,167 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+	  <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div style="float:left;">
+        <button class="btn btn-turquoise btn-add " id="action_add" url="javascript:;">
+          访问授权
+        </button>
+
+        <button class="btn btn-info btn-add " id="action_add" url="{:U('Role/user',array('rid'=> I('rid')))}">
+          成员列表
+        </button>
+      </div>
+      <div style="float:left;margin-left:10px;">
+        <select name="role" class="form-control" >
+          <volist name="all_role" id="vo">
+            <option value="{:U('Role/visit',array('rid'=>$vo['id']))}" <eq name="vo['id']" value="$this_role['id']">selected</eq> >{$vo.title}</option>
+          </volist>
+        </select>
+      </div>
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <form action="{:U('Role/visit')}" class="form-horizontal form" method="POST" role="form" >
+        <volist name="list" id="vo">
+          <dl class="checkmod">
+            <div class="form-group">
+              <label class="col-sm-2">
+                <input type="checkbox" class="default check_all" name="rules[]" value="{$vo.id}">&nbsp;&nbsp;
+                <span>{$vo.title}</span>
+              </label>
+              <div class="col-sm-12">
+                <div class="form-block">
+                  <dd class="bd">
+                    <present name="vo['child']">
+                      <volist name="vo['child']" id="child">
+                        <div class="check">
+                          <div>
+                            <label class="checkbox">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <input name="rules[]" value="{$child.id}" type="checkbox" class="default check_row">
+                              &nbsp;&nbsp;
+                              {$child.title}
+                            </label>
+                          </div>
+                          <notempty name="child['operator']">
+                            <span class="child_row">
+                              <volist name="child['operator']" id="op">
+                                <div>
+                                  <label class="checkbox">
+                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     <input name="rules[]" value="{$op.id}" type="checkbox" class="default">
+                                    &nbsp;&nbsp;{$op.title}&nbsp;&nbsp;
+                                  </label>
+                                </div>
+                              </volist>
+                            </span>
+                            <span class="divsion">&nbsp;</span>
+                          </notempty>
+                        </div>
+                      </volist>
+                    </present>
+                  </dd>
+                </div>
+              </div>
+            </div>
+          </dl>
+        </volist>
+
+        <div class="form-group">
+          <div class="hidden">
+            <input type="hidden" name="id" class="form-control"  autocomplete="off" value="{$this_role.id}"/>
+          </div>
+        </div>
+
+        <div class="form-group-separator"></div>
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-success ajax-post" target-form="form">提 交</button>
+            <button type="reset" class="btn btn-white btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function()
+    {
+      var rules = '{$this_role.rules}';
+
+      rules = rules.split(",");
+
+      $('.default').each(function()
+      {
+        for(var x in rules)
+        {
+          if(parseInt(this.value) == rules[x])
+          {
+            $(this).prop('checked', true);
+          }
+        }
+
+        if(this.value=='')
+        {
+          $(this).closest('span').remove();
+        }
+      });
+
+      // 全选节点
+      $('.check_all').on('change',function()
+      {
+        $(this).closest('dl').find('dd').find('input').prop('checked',this.checked);
+      });
+
+      // 次级全选节点
+      $('.check_row').on('change',function()
+      {
+        $(this).closest('.check').find('.child_row').find('input').prop('checked',this.checked);
+      });
+
+      $('select[name="role"]').change(function()
+      {
+        location.href = this.value;
+      });
+    });
+  </script>
+</block>

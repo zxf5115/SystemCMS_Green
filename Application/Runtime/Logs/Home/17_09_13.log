@@ -1,0 +1,73 @@
+[ 2017-09-13T19:36:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.106371s ]
+INFO: [ app_init ] --END-- [ RunTime:0.106442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033404s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0603s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0575s ]
+SQL: SELECT `update_time` FROM `unique_visitor` WHERE `status` = 1 AND `ip_address` = '2130706433' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0075s ]
+NOTIC: [8] Undefined index: validate E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0066s ]
+SQL: INSERT INTO `unique_visitor` (`browser`,`ip_address`,`system`,`language`,`update_time`,`status`,`create_time`,`founder`) VALUES ('Firefox','2130706433','简体中文','Windows','1505302615','1','1505302614','游客') [ RunTime:0.0715s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `publicity` [ RunTime:0.0606s ]
+SQL: SELECT `id`,`title`,`picture` FROM `publicity` WHERE `status` = 1 ORDER BY sort ASC LIMIT 5   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0304s ]
+SQL: SELECT `id` FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0471s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0349s ]
+SQL: SELECT `id`,`title`,`content` FROM `note` WHERE `status` = 1 ORDER BY create_time DESC  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0463s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 2   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.020436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.020480s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.369410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.369462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024382s ]
+

@@ -1,0 +1,35 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-error centered">
+		<div class="error-symbol">
+			<i class="fa-warning"></i>
+		</div>
+
+		<h2>
+			{$data}
+			<small></small>
+		</h2>
+
+		<p>您没有权限执行当前操作!</p>
+		<p>如需要执行当前操作请联系管理员进行权限设置!</p>
+
+	</div>
+
+	<div class="page-error-search centered">
+		<form class="form-half" method="get" action="javascript:;">
+			<input type="text" class="form-control" placeholder="搜索..." />
+
+			<button type="submit" class="btn-unstyled">
+				<i class="linecons-search"></i>
+			</button>
+		</form>
+
+		<a href="javascript:;" class="go-back" onclick="history.go(-1)">
+			<i class="fa-angle-left"></i>
+			回到上一步
+		</a>
+	</div>
+</block>
+
+<block name="script"></block>

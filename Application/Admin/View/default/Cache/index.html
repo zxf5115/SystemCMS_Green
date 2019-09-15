@@ -1,0 +1,75 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+     <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="chart-item-bg-2">
+        <div class="chart-item-num num-small" style="width:20%" data-count="this" data-from="0" data-to="{$cacheSize}" data-suffix="{$cacheUnit}" data-duration="2">0B</div>
+        <div class="chart-item-desc">
+          缓存文件，为提高网站相应速度而生成的缓存文件
+        </div>
+        <div>
+          <button class="btn btn-turquoise ajax-get confirm" url="{:U('Cache/clearCache')}">清 空</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="chart-item-bg-2">
+        <div class="chart-item-num num-small" style="width:20%" data-count="this" data-from="0" data-to="{$logSize}" data-suffix="{$logUnit}" data-duration="2">0B</div>
+        <div class="chart-item-desc">
+          日志文件，为网站运行过程中产生的系统日志信息
+        </div>
+        <div>
+          <button class="btn btn-turquoise ajax-get confirm" url="{:U('Cache/logCache')}">清 空</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="chart-item-bg-2">
+        <div class="chart-item-num num-small" style="width:20%" data-count="this" data-from="0" data-to="{$tempSize}" data-suffix="{$tempUnit}" data-duration="2">0B</div>
+        <div class="chart-item-desc">
+          临时文件，为网站运行过程中产生的系统临时文件
+        </div>
+        <div>
+          <button class="btn btn-turquoise ajax-get confirm" url="{:U('Cache/tempCache')}">清 空</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+
+</block>

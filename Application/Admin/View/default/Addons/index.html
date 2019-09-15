@@ -1,0 +1,174 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <button class="btn btn-turquoise btn-add " id="action_add" url="{:U('Addons/add')}">
+      新 增
+      </button>
+
+      <button class="btn btn-secondary ajax-post" url="{:U('Addons/changeStatus',array('method'=>'resume'))}" target-form="ids">
+      启 用
+      </button>
+
+      <button class="btn btn-red ajax-post" url="{:U('Addons/changeStatus',array('method'=>'forbid'))}" target-form="ids">
+      禁 用
+      </button>
+
+      <button class="btn btn-blue ajax-post confirm" url="{:U('Addons/changeStatus',array('method'=>'delete'))}" target-form="ids">
+      删 除
+      </button>
+
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered table-striped" id="dataTables">
+        <thead>
+          <tr>
+            <th class="row-selected row-selected">
+              <input class="check-all cbr" type="checkbox"/>
+            </th>
+            <th class="">名称</th>
+            <th class="">标识</th>
+            <th class="">描述</th>
+            <th class="">状态</th>
+            <th class="">作者</th>
+            <th class="">版本</th>
+            <th class="">操作</th>
+          </tr>
+        </thead>
+        <tbody class="middle-align">
+          <notempty name="_list">
+              <volist name="_list" id="vo">
+                <tr>
+                  <td><input class="ids cbr" type="checkbox" name="id[]" value="{$vo.id}" /></td>
+                  <td>{$vo.title}</td>
+                  <td>{$vo.name}</td>
+                  <td>{$vo.description}</td>
+                  <td>{$vo.status_text|default="未安装"}</td>
+                  <td>{$vo.author}</td>
+                  <td>{$vo.version}</td>
+                  <td>
+                    <empty name="vo.uninstall">
+                      <?php
+                        $class  = get_addon_class($vo['name']);
+                        if(!class_exists($class))
+                        {
+                          $has_config = 0;
+                        }
+                        else
+                        {
+                          $addon = new $class();
+                          $has_config = count($addon->getConfig());
+                        }
+                      ?>
+                      <if condition="!empty($has_config)">
+                        <a class="btn btn-info btn-sm btn-icon icon-left" href="{:U('Addons/config', array('id'=>$vo['id']))}">设置</a>
+                      </if>
+
+                      <if condition="$vo['status'] egt 0">
+                        <eq name="vo.status" value="1">
+                          <a href="{:U('Addons/changeStatus?method=forbid', array('id'=>$vo['id']))}" class="ajax-get btn btn-red btn-sm btn-icon icon-left">禁用</a>
+                        <else/>
+                          <a href="{:U('Addons/changeStatus?method=resume', array('id'=>$vo['id']))}" class="ajax-get btn btn-secondary btn-sm btn-icon icon-left">启用</a>
+                        </eq>
+                      </if>
+
+                      <a class="ajax-get btn btn-blue btn-sm btn-icon icon-left" href="{:U('Addons/uninstall', array('id'=>$vo['id']))}">卸载</a>
+
+                    <else />
+                      <a class="ajax-get btn btn-turquoise btn-sm btn-icon icon-left" href="{:U('Addons/install', array('addon_name'=>$vo['name']))}">安装</a>
+                    </empty>
+                  </td>
+                </tr>
+              </volist>
+            <else/>
+              <td colspan="6" class="text-center"></td>
+            </notempty>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+
+  <!-- Imported styles on this page -->
+  <link rel="stylesheet" href="__JS__/datatables/dataTables.bootstrap.css">
+
+  <script src="__JS__/datatables/js/jquery.dataTables.min.js"></script>
+
+
+  <!-- Imported scripts on this page -->
+  <script src="__JS__/datatables/dataTables.bootstrap.js"></script>
+  <script src="__JS__/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+  <script src="__JS__/datatables/tabletools/dataTables.tableTools.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function()
+    {
+      //启用表格功能   dataTables
+      $('#dataTables').dataTable(
+      {
+        "language": { "url": "__LANGUAGE__/DataTables/zh_CN.txt" },
+        // 分页样式
+        "sPaginationType" : "full_numbers",
+
+        // 当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+        "deferRender": true,
+
+        // 是否打开客户端状态记录功能。这个数据是记录在cookies中的，打开了这个记录后，即使刷新一次页面，或重新打开浏览器，之前的状态都是保存下来的
+        'bStateSave': true,
+
+        // 当datatable获取数据时候是否显示正在处理提示信息。
+        "bProcessing": false,
+
+        // 当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+        "deferRender": true,
+
+        "aaSorting": [[ 1, "desc" ]],
+
+        "bSort": false,
+
+        // "columnDefs":[{
+        //             "orderable":false,//禁用排序
+        //             "targets":[1,7]   //指定的列
+        //             }],
+      });
+    });
+  </script>
+</block>

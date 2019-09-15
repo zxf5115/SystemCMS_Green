@@ -1,0 +1,151 @@
+  <!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+  <div class="page-container">
+
+    <!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+    <!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+    <!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+    <div class="sidebar-menu toggle-others fixed">
+
+      <div class="sidebar-menu-inner">
+
+        <header class="logo-env">
+
+          <!-- logo -->
+          <div class="logo">
+            <a href="{:U('Index/index')}" class="logo-expanded">
+              <!-- <img src="__IMG__/logo@2x.png" width="80" alt="" /> -->
+              <span style="color:#fff;font-size:1.5em">{:C('WEB_SITE_TITLE')}</span>
+            </a>
+
+            <a href="{:U('Index/index')}" class="logo-collapsed">
+              <!-- <img src="__IMG__/logo-collapsed@2x.png" width="40" alt="" /> -->
+              <span style="color:#fff;font-size:1.5em">{:C('WEB_SITE_TITLE_ABBR')}</span>
+            </a>
+          </div>
+
+          <!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+          <div class="mobile-menu-toggle visible-xs">
+            <a href="#" data-toggle="user-info-menu">
+              <i class="fa-bell-o"></i>
+              <span class="badge badge-success">7</span>
+            </a>
+
+            <a href="#" data-toggle="mobile-menu">
+              <i class="fa-bars"></i>
+            </a>
+          </div>
+
+        </header>
+
+        <ul id="main-menu" class="main-menu">
+          <!-- add class "multiple-expanded" to allow multiple submenus to open -->
+          <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+
+          <volist name="__MENU__.main" id="vo">
+            <li class="{$vo.class}">
+              <a href="{$vo.url|U}">
+                <i class="glyphicon glyphicon-cog"></i>
+                <span class="title">{$vo.title}</span>
+              </a>
+              <notempty name="vo.child">
+                <ul>
+                  <volist name="vo.child" key="k" id="xo">
+                    <notempty name="xo">
+                      <li class="">
+                        <a href="javascript:;">
+                          <i class="glyphicon glyphicon-plus"></i>
+                          <span class="title">{$xo.title}</span>
+                        </a>
+                        <ul style="{$xo['ul-class'] ? 'display:block' : ''}">
+                          <volist name="xo.info" id = "zo">
+                            <if condition="!empty($zo['title'])">
+                              <li class="{$zo.li-class}">
+                                <a href="{$zo.url|U}">
+                                  <span class="title">{$zo.title}</span>
+                                </a>
+                              </li>
+                            </if>
+                          </volist>
+                        </ul>
+                      </li>
+                    </notempty>
+                  </volist>
+                </ul>
+              </notempty>
+            </li>
+          </volist>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+
+      <!-- User Info, Notifications and Menu Bar -->
+      <nav class="navbar user-info-navbar" role="navigation">
+
+        <!-- Left links for user info navbar -->
+        <ul class="user-info-menu left-links list-inline list-unstyled">
+
+          <li class="hidden-sm hidden-xs">
+            <a href="#" data-toggle="sidebar">
+              <i class="fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+
+
+        <!-- Right links for user info navbar -->
+        <ul class="user-info-menu right-links list-inline list-unstyled">
+
+          <li class="search-form"><!-- You can add "always-visible" to show make the search input visible -->
+
+           <!-- <form method="get" action="extra-search.html">
+              <input type="text" name="s" class="form-control search-field" placeholder="搜索"/>
+
+              <button type="submit" class="btn btn-link">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </form>-->
+
+          </li>
+
+          <li class="dropdown user-profile">
+            <a href="#" data-toggle="dropdown">
+              <img src="{:session('user_auth.picture')}" alt="" class="img-circle img-inline userpic-32" width="30" height="30"/>
+              <span>
+                {:get_nickname()}
+                <i class="fa-angle-down"></i>
+              </span>
+            </a>
+
+            <ul class="dropdown-menu user-profile-menu list-unstyled">
+              <!-- <li>
+                <a href="#edit-profile">
+                  <i class="fa-edit"></i>
+                  信息中心
+                </a>
+              </li>
+              <li>
+                <a href="#settings">
+                  <i class="fa-wrench"></i>
+                  设置
+                </a>
+              </li>
+              <li>
+                <a href="{:U('System/help')}">
+                  <i class="fa-info"></i>
+                  帮助
+                </a>
+              </li> -->
+              <li class="last">
+                <a href="{:U('Public/logout')}">
+                  <i class="fa-lock"></i>
+                  退出
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </nav>

@@ -1,0 +1,233 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+       <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+          <div class="panel-options">
+            <a href="#" data-toggle="panel">
+              <span class="collapse-icon">&ndash;</span>
+              <span class="expand-icon">+</span>
+            </a>
+            <a href="#" data-toggle="remove">
+              &times;
+            </a>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <form action="{:U('Admin/User/edit')}" method="post"  role="form" class="form form-horizontal validate">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-2 text-right">
+                  <div class="droppable-area">
+                    <span class="red">上传</span>
+                    <input type="file" id="upload" class="custom-file">
+                  </div>
+                </div>
+                <div class="col-sm-10">
+                  <table class="table table-bordered table-striped" id="preview">
+                    <thead>
+                      <tr>
+                        <th width="1%" class="text-center"></th>
+                        <th width="50%">图片名称</th>
+                        <th width="20%">图片状态</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <a href='{$list.0.picture}' target='_black'>
+                            <img src='{$list.0.picture}' style='width:30px;'/>
+                          </a>
+                        </td>
+                        <td><span class="text-success">成功</span></td>
+                        <td>
+                          <span class="text-error remove_hand" onclick="$.custom_remove(this);">删除</span>
+                          <input name='picture' type='hidden' value='{$list.0.picture}'/>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label red">账户名称</label>
+
+              <div class="col-sm-10">
+                <input name="username" value="{$list.0.username}" type="text" class="form-control" placeholder="请输入账户名称">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label red">显示昵称</label>
+
+              <div class="col-sm-10">
+                <input name="nickname" value="{$list.0.nickname}" type="text" class="form-control" placeholder="请输入显示昵称">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label red">联系邮箱</label>
+
+              <div class="col-sm-10">
+                <input name="email" value="{$list.0.email}" type="email" class="form-control" placeholder="请输入联系邮箱">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label red">联系电话</label>
+
+              <div class="col-sm-10">
+                <input name="mobile" value="{$list.0.mobile}" type="text" class="form-control" placeholder="请输入联系电话">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">联系扣扣</label>
+
+              <div class="col-sm-10">
+                <input name="qq" value="{$list.0.qq}" type="text" class="form-control" placeholder="请输入联系QQ">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">账户性别</label>
+
+              <div class="col-sm-10">
+                <select class="form-control" name="sex">
+                  <option value="">请选择账户性别</option>
+                  <option value="1">男</option>
+                  <option value="2">女</option>
+                  <option value="3">不显示</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">出生年月</label>
+
+              <div class="col-sm-10">
+                <input name="birthday" value="{$list.0.birthday}" class="form-control" data-mask="date" placeholder="请输入出生年月"/>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">所在省份</label>
+
+              <div class="col-sm-10">
+                <select class="form-control" name="province">
+                  <option value="">请选择所在省份</option>
+                  <volist name="list['province']" id="vo">
+                    <option value="{$vo.id}">{$vo.name}</option>
+                  </volist>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">个人介绍</label>
+
+              <div class="col-sm-10">
+                <textarea name="description" class="form-control" rows="10" placeholder="请输入个人介绍">{$list.0.description}</textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+            	<div class="hidden">
+            		<input type="hidden" name="id" class="form-control"  autocomplete="off" value="{$list.0.id}"/>
+            	</div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-success ajax-post" target-form="form">提 交</button>
+                <button type="reset" class="btn btn-white btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script src="__JS__/jquery-validate/jquery.validate.min.js"></script>
+  <script src="__JS__/resizeable.js"></script>
+  <script src="__JS__/inputmask/jquery.inputmask.bundle.js"></script>
+
+  <script type="text/javascript" src="__STATIC__/fileupload/vendor/jquery.ui.widget.js"></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.fileupload.js"></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.iframe-transport.js"></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.fileupload-process.js "></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.fileupload-validate.js"></script>
+  <script type="text/javascript" src="__JS__/custom/custom_file_upload.js"></script>
+
+  <script type="text/javascript">
+    $(function()
+    {
+      $('select[name="sex"]').val('{$list.0.sex}');
+      $('select[name="province"]').val('{$list.0.province}');
+
+      var url = "{:U('File/uploadImage')}";
+      $.custom_upload('picture', url, 0, '', 1);
+    })
+  </script>
+</block>
+

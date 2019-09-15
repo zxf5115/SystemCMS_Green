@@ -1,0 +1,741 @@
+[ 2017-03-16T09:45:56+08:00 ] ::1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002433s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000548s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001945s ]
+
+[ 2017-03-16T09:46:00+08:00 ] ::1 /Admin/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001664s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0293s ]
+SQL: SELECT * FROM `member` WHERE `status` = 1 AND `username` = 'admin' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `action` [ RunTime:0.0674s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'login' LIMIT 1   [ RunTime:0.0218s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0015s ]
+SQL: UPDATE `member` SET `id`='1',`login_number`=`login_number`+1,`last_login_time`='1489628760',`last_login_ip`='0' WHERE `id` = '1' [ RunTime:0.1207s ]
+SQL: SHOW COLUMNS FROM `member_extend` [ RunTime:0.0444s ]
+SQL: SELECT `nickname`,`picture` FROM `member_extend` WHERE `uid` = '1' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2017-03-16T09:46:01+08:00 ] ::1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0029s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Index/index%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0015s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 2 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '角色管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 97 )  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 97 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '广告管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '分类管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '项目管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '随笔管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '服务管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '关于管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '联系管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '标签管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 21 )  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 21 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '插件管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '钩子管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 41 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 41 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '日志管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '行为管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 52 )  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 52 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '配置管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '菜单管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '备份管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '友情链接' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '缓存管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = 'SEO管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Index/index%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `page_view` [ RunTime:0.0322s ]
+NOTIC: [8] Undefined index: validate E:\Workspace\PHP\QinYun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\Workspace\PHP\QinYun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `page_view` [ RunTime:0.0021s ]
+SQL: INSERT INTO `page_view` (`ip_address`,`status`,`create_time`,`founder`) VALUES ('0','1','1489628761','游客') [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `unique_visitor` WHERE `status` = 1 ORDER BY create_time DESC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `active` [ RunTime:0.0827s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `active` WHERE ( `create_time` < 1489593600 AND `create_time` >= 1489507200  ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `member` WHERE `status` > -1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `member` WHERE `status` = 1 AND ( `create_time` >= 1489507200 AND `create_time` < 1489593600  ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0023s ]
+SQL: SELECT FROM_UNIXTIME(update_time,"%Y-%m-%d") AS data,count(id) AS val FROM `unique_visitor` WHERE `status` = 1 AND ( `update_time` < 1489593600 AND `update_time` >= 1489507200  ) GROUP BY FROM_UNIXTIME(update_time,"%Y-%m-%d") ORDER BY update_time ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `page_view` [ RunTime:0.0018s ]
+SQL: SELECT FROM_UNIXTIME(create_time,"%Y-%m-%d") AS data,count(id) AS val FROM `page_view` WHERE `status` = 1 AND ( `create_time` < 1489593600 AND `create_time` >= 1489507200  ) GROUP BY FROM_UNIXTIME(create_time,"%Y-%m-%d") ORDER BY create_time ASC  [ RunTime:0.0016s ]
+NOTIC: [2048] Only variables should be passed by reference E:\Workspace\PHP\QinYun\Application\Admin\Plugin\SysinfoPlugin.class.php 第 226 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+NOTIC: [8] Undefined index: ul-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 125 行.
+NOTIC: [8] Undefined index: li-class E:\Workspace\PHP\QinYun\Application\Runtime\Cache\Admin\085b574956cdc611cfedaace62cf4e64.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001389s ]
+
+[ 2017-03-16T09:46:03+08:00 ] ::1 /Admin/Stat/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001890s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0033s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Stat/index%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Stat/index%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0016s ]
+SQL: SELECT count(id) AS sum,FROM_UNIXTIME(create_time,"%H") AS date,`create_time` FROM `member` WHERE `status` = 1 AND ( `create_time` >= 1489507200 AND `create_time` < 1489593600  ) GROUP BY FROM_UNIXTIME(create_time,"%Y-%m-%d %H") ORDER BY create_time ASC  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2017-03-16T09:46:04+08:00 ] ::1 /Admin/Stat/area
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002521s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0031s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Stat/area%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Stat/area%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `member` [ RunTime:0.0020s ]
+SQL: SELECT `province`,count(province) AS val FROM member l LEFT JOIN member_extend r ON l.id = r.uid  WHERE l.status = 1 GROUP BY province ORDER BY create_time ASC  [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.0200s ]
+SQL: SELECT `name` FROM `province` WHERE `status` = 1 AND `id` = '22' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.0017s ]
+SQL: SELECT `name` FROM `province` WHERE `status` = 1 AND `id` = '12' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-03-16T09:46:04+08:00 ] ::1 /Admin/Stat/sex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003975s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Stat/sex%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Stat/sex%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `member_extend` [ RunTime:0.0020s ]
+SQL: SELECT `sex`,count(sex) AS val FROM `member_extend` ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2017-03-16T10:24:47+08:00 ] ::1 /Admin/Item/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/index%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '110' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0023s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 1 )  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0015s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 2 )  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '角色管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 97 )  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 97 AND `hide` = 0  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '广告管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '分类管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '项目管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '随笔管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '服务管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '关于管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '联系管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '标签管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 21 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 21 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '插件管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '钩子管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 41 )  [ RunTime:0.0025s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 41 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '日志管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '行为管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 52 )  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 52 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '配置管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '菜单管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '备份管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '友情链接' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '缓存管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = 'SEO管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/index%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `item` ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0010s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0015s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0034s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0046s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0014s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0011s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-03-16T10:24:49+08:00 ] ::1 /Admin/Item/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003328s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/add%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '111' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '110' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0012s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 1 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 2 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '角色管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 97 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 97 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '广告管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '分类管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '项目管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '随笔管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '服务管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '关于管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '联系管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '标签管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 21 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 21 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '插件管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '钩子管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 41 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 41 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '日志管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '行为管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 52 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 52 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '配置管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '菜单管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '备份管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '友情链接' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '缓存管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = 'SEO管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/add%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `id` = '110' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 1 ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `label` WHERE `status` = 1 AND `type` = 1 ORDER BY create_time DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-03-16T10:24:55+08:00 ] ::1 /Admin/File/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0014s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%File/uploadImage%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%File/uploadImage%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `file` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`type`,`path`,`url`,`md5`,`sha1`,`status`,`create_time`,`founder` FROM `file` WHERE `md5` = '1d4c6c8b4dbf7a4928d96f0d145acfec' AND `sha1` = '733c3c5c28a9f20896450f14a06ae743067c21fd' LIMIT 1   [ RunTime:0.0144s ]
+NOTIC: [8] Undefined index: file E:\Workspace\PHP\QinYun\Application\Admin\Controller\FileController.class.php 第 212 行.
+
+[ 2017-03-16T10:25:12+08:00 ] ::1 /Admin/Item/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002334s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0013s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/add%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '111' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '110' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0014s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 1 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 2 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '角色管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 97 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 97 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '广告管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '分类管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '项目管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '随笔管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '服务管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '关于管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '联系管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '标签管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 21 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 21 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '插件管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '钩子管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 41 )  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 41 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '日志管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '行为管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 52 )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 52 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '配置管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '菜单管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '备份管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '友情链接' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '缓存管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = 'SEO管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/add%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `id` = '110' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: image_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: link_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: form_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: html_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: image_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: link_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: form_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: html_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: image_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: link_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: form_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: html_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: image_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: link_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: form_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: html_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: image_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: link_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: form_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Undefined variable: html_tags E:\Workspace\PHP\QinYun\Application\Common\Common\custom_filter.php 第 47 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate E:\Workspace\PHP\QinYun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\Workspace\PHP\QinYun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0009s ]
+SQL: INSERT INTO `item` (`picture`,`title`,`content`,`status`,`create_time`,`founder`) VALUES ('/Uploads/Picture/2017-03-10/58c24f87aefec.jpg','213123123123','<p><span style=\"color:#ff0000\"><strong>123123123</strong></span></p><p><span style=\"color:#ff0000\"><strong>1231</strong></span></p><p><span style=\"color:#ff0000\"><strong>123123</strong></span></p><p><span style=\"color:#ff0000\"><strong>123123</strong></span></p><p><span style=\"color:#ff0000\"><strong><br/></strong></span></p><p><span style=\"color:#ff0000\"><strong>123</strong></span></p><p><span style=\"color:#ff0000\"><strong><br/></strong></span></p><p><span style=\"color:#ff0000\"><strong>123123123<br/></strong></span></p>','1','1489631111','admin') [ RunTime:0.0388s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0013s ]
+SQL: INSERT INTO `category_relevance` (`type`,`oid`,`cid`) VALUES ('1','4','2') [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0013s ]
+SQL: INSERT INTO `label_relevance` (`type`,`oid`,`lid`) VALUES ('1','4','1') [ RunTime:0.0392s ]
+SQL: SHOW COLUMNS FROM `action` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `action` WHERE `name` = 'add_Item' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-03-16T10:25:13+08:00 ] ::1 /Admin/Item/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001978s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/index%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '110' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '角色管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 97 )  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 97 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '广告管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '分类管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '项目管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '随笔管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '服务管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '关于管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '联系管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '标签管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 21 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 21 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '插件管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '钩子管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 41 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 41 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '日志管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '行为管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 52 )  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 52 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '配置管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '菜单管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '备份管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '友情链接' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '缓存管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = 'SEO管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/index%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `item` ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0011s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0010s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0010s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0011s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0014s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0013s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-03-16T15:44:04+08:00 ] ::1 /Admin/Item/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `pid` = 0 AND `hide` = 0 ORDER BY sort ASC  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0021s ]
+SQL: SELECT `id` FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/index%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '110' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`pid`,`title`,`group` FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0014s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 1 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 1 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 2 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '用户管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '角色管理' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 97 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 97 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '广告管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '分类管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '项目管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '随笔管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0014s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '服务管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '关于管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '联系管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '标签管理' AND `pid` = 97 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 21 )  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 21 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '插件管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '钩子管理' AND `pid` = 21 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 41 )  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 41 AND `hide` = 0  [ RunTime:0.0019s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '日志管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '行为管理' AND `pid` = 41 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT DISTINCT  `group` FROM `menu` WHERE ( pid = 52 )  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`url` FROM `menu` WHERE `pid` = 52 AND `hide` = 0  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '配置管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '菜单管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '备份管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '友情链接' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = '缓存管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`group`,`url`,`tip` FROM `menu` WHERE `group` = 'SEO管理' AND `pid` = 52 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `url` LIKE '%Item/index%' AND `pid` <> 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `menu` WHERE `status` = 1 AND `id` = '97' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `item` ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0026s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0022s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QinYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0016s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0014s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0025s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0016s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0012s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0012s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001581s ]
+

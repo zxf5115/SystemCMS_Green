@@ -1,0 +1,80 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">操作日志</h1>
+      <p class="description">显示当前系统中所以有效的用户信息</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <section class="mailbox-env">
+        <div class="row">
+          <div class="mail-single">
+            <!-- Email Title and Button Options -->
+            <div class="mail-single-header">
+              <h2>
+                {:get_action($info['action_id'], "title")}
+              </h2>
+            </div>
+
+            <!-- Email Info From/Reply -->
+            <div class="mail-single-info">
+
+              <div class="mail-single-info-user dropdown">
+                <a href="#" data-toggle="dropdown">
+                  <span>{:get_username($info['user_id'])}</span>
+                  <em class="time">{:date('Y-m-d H:i:s',$info['create_time'])}</em>
+                </a>
+              </div>
+            </div>
+
+            <!-- Email Body -->
+            <div class="mail-single-body">
+              {$info.remark}
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <button type="reset" class="btn btn-white btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+            </div>
+          </div>
+        </div><!-- /.row (nested) -->
+      </section>
+    </div>
+  </div>
+</block>

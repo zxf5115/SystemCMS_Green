@@ -1,0 +1,27 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="row">
+    <div class="span9">
+      <h1>{$meta_title}</h1>
+    </div>
+    <div class="span3">
+      <div class="actual-section">
+        <a href="{:U('Index/index')}" >首页</a> > {$meta_title}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>{$list.title}</h2>
+      <img src="{$list.picture}"/>
+      <p>
+        {$list.content}
+      </p>
+    </div>
+  </div>
+
+  <div class="row space30"></div>
+
+</block>

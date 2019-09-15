@@ -1,0 +1,931 @@
+[ 2017-03-17T09:42:04+08:00 ] ::1 /img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001720s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001872s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:42:04+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001351s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001523s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:42:04+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002279s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:45:57+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002996s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003168s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:45:57+08:00 ] ::1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005304s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:46:23+08:00 ] ::1 /Public/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002913s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003095s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:49:35+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002189s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:49:35+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003389s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003576s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:50:04+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001922s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002103s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:50:05+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002553s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002768s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:50:12+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002925s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003207s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:50:12+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001784s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001939s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:27+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001895s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002058s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:27+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002352s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:42+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002388s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:42+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002468s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:49+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002262s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002428s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:49+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001835s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001991s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:56+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001843s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002007s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:51:56+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002521s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002706s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:55:25+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002534s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:55:25+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002677s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002922s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:59:00+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001903s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002078s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T09:59:00+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002706s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002949s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:35:24+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001818s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:35:24+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002519s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002758s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:36:53+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003342s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:36:53+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002662s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002906s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:37:06+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002257s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002558s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:37:06+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002379s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:37:13+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001897s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002047s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:37:13+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001864s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002016s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:42:50+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003612s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003782s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T10:42:50+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004667s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004904s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:17:48+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001812s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001962s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:17:48+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002526s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002787s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:17:50+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001646s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001812s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:17:50+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001638s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001878s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:20:05+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001349s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001524s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:20:05+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001731s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001932s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:21:27+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001433s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:21:27+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001990s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002172s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:21:43+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001538s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:21:43+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001806s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001972s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:21:53+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001824s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002062s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:21:53+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002490s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002737s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:22:00+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001632s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001785s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:22:00+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001809s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001969s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:22:08+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001712s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001861s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:22:08+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001666s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001821s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:22:16+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001948s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002109s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:22:16+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001994s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002151s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:23:22+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001828s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001990s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:23:22+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002261s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:23:34+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001734s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001884s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:23:34+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002549s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002789s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:05+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002990s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003268s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:05+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001819s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001970s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:27+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002864s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003105s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:27+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003491s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003926s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:37+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001998s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002154s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:37+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002326s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:48+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001444s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001590s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:48+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001281s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001430s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:50+08:00 ] ::1 /images/share_core_square.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001435s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001609s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:59+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002365s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:24:59+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003821s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:25:01+08:00 ] ::1 /images/share_core_square.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001538s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001704s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:25:08+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001290s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:25:08+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002567s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002958s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:25:10+08:00 ] ::1 /images/share_core_square.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001904s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002114s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:25:28+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001789s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:25:28+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003284s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:28:55+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001353s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001539s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:28:55+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002874s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003134s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:29:21+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001457s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:29:21+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001749s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002274s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:29:43+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001788s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001952s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:29:43+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002383s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002633s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:29:56+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001729s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001895s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:29:56+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002419s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:30:06+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002312s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:30:06+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002418s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:30:17+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002597s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002830s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T11:30:17+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002551s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002742s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:25:09+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003161s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:25:09+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002563s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002724s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:25:37+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005683s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005854s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:25:37+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002363s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:44:10+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002328s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002489s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:44:10+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001793s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001946s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:44:26+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002144s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T12:44:26+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002263s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T15:59:21+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002272s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T15:59:21+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002204s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T15:59:48+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001696s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001847s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T15:59:48+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002287s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:00:43+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002331s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002552s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:00:43+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002680s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002900s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:01:02+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003374s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:01:02+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001721s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001878s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:01:10+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001737s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001917s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:01:10+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002701s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002884s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:01:18+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001761s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001912s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:01:20+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002403s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:03:02+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001724s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001874s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:03:02+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002344s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002522s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:05:23+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002363s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:05:23+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001943s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002101s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:08:00+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002435s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002647s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:08:00+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002458s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002663s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:18:42+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001844s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002046s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:18:42+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002748s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002981s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:19:05+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001872s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002042s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:19:05+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002780s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002987s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:19:08+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002214s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:19:14+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001887s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002037s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:20:26+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002646s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002884s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:20:26+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001848s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002074s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:20:46+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001859s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002014s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:20:46+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003309s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:21:00+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001917s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002103s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:21:00+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002768s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003017s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:21:06+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001768s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001924s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:21:06+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002700s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002931s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:03+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002834s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003065s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:04+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002763s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003008s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:10+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003328s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:10+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001797s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001945s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:14+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001850s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002023s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:15+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000261s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003257s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003780s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:18+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002397s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-17T16:22:22+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002374s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\QinYun\Application\Common\Common\api.php 第 42 行.
+

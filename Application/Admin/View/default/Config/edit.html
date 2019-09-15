@@ -1,0 +1,169 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+          <div class="panel-options">
+            <a href="#" data-toggle="panel">
+              <span class="collapse-icon">&ndash;</span>
+              <span class="expand-icon">+</span>
+            </a>
+            <a href="#" data-toggle="remove">
+              &times;
+            </a>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <form action="{:U('Config/add')}" method="post"  role="form" class="form form-horizontal validate">
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">配置标识</label>
+
+              <div class="col-sm-10">
+                <input name="name" value="{$list.name|default=''}" type="text" class="form-control" id="field-1" placeholder="请输入配置标识，用于C函数调用，只能使用英文且不能重复" data-validate="required" data-message-required="请输入配置标识">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">配置标题</label>
+
+              <div class="col-sm-10">
+                <input name="title" value="{$list.title|default=''}" type="text" class="form-control" id="field-1" placeholder="请输入配置标题，用于后台显示的配置标题" data-validate="required" data-message-required="请输入配置标题">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">排序</label>
+
+              <div class="col-sm-10">
+                <input name="sort" value="{$list.sort|default=''}" type="text" class="form-control" id="field-1" placeholder="请输入排序编号，用于分组显示的顺序" data-validate="required" data-message-required="请输入排序编号">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">配置类型</label>
+
+              <div class="col-sm-10">
+                <select name="type" class="form-control" placeholder="请选择配置类型，系统会根据不同类型解析配置值">
+                  <volist name="Think.config.CONFIG_TYPE_LIST" id="type">
+                    <option value="{$key}">{$type}</option>
+                  </volist>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">配置分组</label>
+
+              <div class="col-sm-10">
+                <select name="group" class="form-control" placeholder="请选择配置分组">
+                  <option value="0">不分组</option>
+                  <volist name="Think.config.CONFIG_GROUP_LIST" id="group">
+                    <option value="{$key}">{$group}</option>
+                  </volist>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">配置值</label>
+
+              <div class="col-sm-10">
+                <textarea name="value" id="field-5" class="form-control" cols="5" placeholder="请输入配置值">{$list.value|default=''}</textarea>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">配置项</label>
+
+              <div class="col-sm-10">
+                <textarea name="extra" id="field-5" class="form-control" cols="5" placeholder="请输入配置项（如果是枚举型 需要配置该项）">{$list.extra|default=''}</textarea>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="field-1">配置说明</label>
+
+              <div class="col-sm-10">
+                <textarea name="remark" id="field-5" class="form-control" cols="5" placeholder="请输入配置详细说明">{$list.remark|default=''}</textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="hidden">
+                <input type="hidden" name="id" class="form-control"  autocomplete="off" value="{$list.id}"/>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-success ajax-post" target-form="form">提 交</button>
+                <button type="reset" class="btn btn-white btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script src="__JS__/jquery-validate/jquery.validate.min.js"></script>
+  <script src="__JS__/resizeable.js"></script>
+  <script src="__JS__/inputmask/jquery.inputmask.bundle.js"></script>
+
+  <script type="text/javascript">
+    Think.setValue("type", {$list.type|default=0});
+    Think.setValue("group", {$list.group|default=0});
+  </script>
+</block>

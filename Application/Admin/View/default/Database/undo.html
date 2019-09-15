@@ -1,0 +1,169 @@
+<extend name="Public/base" />
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+
+
+  <!-- 删除搜索和结果数过滤器 -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-options">
+        <a href="#" data-toggle="panel">
+          <span class="collapse-icon">&ndash;</span>
+          <span class="expand-icon">+</span>
+        </a>
+        <a href="#" data-toggle="remove">
+          &times;
+        </a>
+      </div>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered table-striped" id="dataTables">
+        <thead>
+          <tr>
+            <th class="">备份名称</th>
+            <th class="">卷数</th>
+            <th class="">压缩</th>
+            <th class="">数据大小</th>
+            <th class="">备份时间</th>
+            <th class="">状态</th>
+            <th class="">操作</th>
+          </tr>
+        </thead>
+        <tbody class="middle-align">
+          <volist name="list" id="data">
+            <tr>
+              <td>{$data.time|date='Ymd-His',###}</td>
+              <td>{$data.part}</td>
+              <td>{$data.compress}</td>
+              <td>{$data.size|format_bytes}</td>
+              <td>{$key}</td>
+              <td>-</td>
+              <td class="action">
+                <a class="db-import btn btn-info" href="{:U('import?time='.$data['time'])}">还原</a>&nbsp;
+                <a class="ajax-get confirm btn btn-blue" href="{:U('del?time='.$data['time'])}">删除</a>
+              </td>
+            </tr>
+          </volist>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+
+  <!-- Imported styles on this page -->
+  <link rel="stylesheet" href="__JS__/datatables/dataTables.bootstrap.css">
+
+  <script src="__JS__/datatables/js/jquery.dataTables.min.js"></script>
+  <!-- Imported scripts on this page -->
+  <script src="__JS__/datatables/dataTables.bootstrap.js"></script>
+  <script src="__JS__/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+  <script src="__JS__/datatables/tabletools/dataTables.tableTools.min.js"></script>
+
+  <script type="text/javascript">
+    //启用表格功能   dataTables
+    $('#dataTables').dataTable(
+    {
+      "sPaginationType" : "full_numbers", // 分页样式
+      //当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+      'bStateSave': true, //开关，是否打开客户端状态记录功能。这个数据是记录在cookies中的，打开了
+      "deferRender": true, //当处理大数据时，延迟渲染数据，有效提高Datatables处理能力
+      "aaSorting": [[ 1, "desc" ]],
+      "bSort": false,
+      // "columnDefs":[{
+      //             "orderable":false,//禁用排序
+      //             "targets":[1,7]   //指定的列
+      //             }],
+      "oLanguage" :
+      {
+        "sLengthMenu": "每页显示 _MENU_ 条记录",
+        "sZeroRecords": "抱歉， 没有找到",
+        "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+        "sInfoEmpty": "没有数据",
+        "sInfoFiltered": "(从 _MAX_ 条数据中检索)",
+        "sZeroRecords": "没有检索到数据",
+         "sSearch": "查询:",
+        "oPaginate":
+        {
+          "sFirst": "首页",
+          "sPrevious": "前一页",
+          "sNext": "后一页",
+          "sLast": "尾页"
+        }
+      }
+    });
+
+    $(".db-import").click(function()
+    {
+      var self = this, status = ".";
+      $.get(self.href, success, "json");
+      window.onbeforeunload = function(){ return "正在还原数据库，请不要关闭！" }
+      return false;
+
+      function success(data)
+      {
+        if(data.status)
+        {
+          if(data.gz)
+          {
+            data.info += status;
+            if(status.length === 5)
+            {
+              status = ".";
+            }
+            else
+            {
+              status += ".";
+            }
+          }
+          $(self).parent().prev().text(data.info);
+
+          if(data.part)
+          {
+            $.get(self.href,
+              {"part" : data.part, "start" : data.start},
+              success,
+              "json"
+              );
+          }
+          else
+          {
+            window.onbeforeunload = function(){ return null; }
+          }
+        }
+        else
+        {
+          updateAlert(data.info,'alert-error');
+        }
+      }
+    });
+
+  </script>
+</block>

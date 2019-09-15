@@ -1,0 +1,108 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">帮助中心</h1>
+      <p class="description">显示当前系统中所以有效的用户信息</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <empty name="__NAV__">
+          <li class="active">
+            <strong>帮助中心</strong>
+          </li>
+        </empty>
+
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div id="toc"></div>
+    </div>
+
+    <div class="col-md-9">
+
+      <div class="tocify-content">
+
+        <h2 class="no-top-margin">帮助1</h2>
+
+        <p>帮助1</p>
+
+        <br />
+
+        <h2>帮助2</h2>
+
+        <p>帮助2</p>
+          <br />
+
+          <h3 class="h4">帮助22</h3>
+          <p>帮助22</p>
+          <br />
+
+          <h3 class="h4">帮助23</h3>
+          <p>帮助23</p>
+
+        <br />
+
+        <h2>帮助3</h2>
+
+        <p>帮助3</p>
+
+
+          <br />
+
+          <h3 class="h4">帮助31</h3>
+
+          <p>帮助31</p>
+
+
+            <br />
+
+            <h4 class="h5">帮助32</h4>
+
+            <p>帮助32</p>
+
+
+            <br />
+
+            <h4 class="h5">帮助33</h4>
+
+            <p>帮助33</p>
+
+
+          <br />
+
+        <h2>帮助4</h2>
+
+        <p>帮助4</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</block>
+
+<block name="script">
+  <script src="__JS__/jquery-ui/jquery-ui.min.js"></script>
+  <script src="__JS__/tocify/jquery.tocify.min.js"></script>
+</block>

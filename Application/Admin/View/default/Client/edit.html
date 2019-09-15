@@ -1,0 +1,161 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+      <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+          <div class="panel-options">
+            <a href="#" data-toggle="panel">
+              <span class="collapse-icon">&ndash;</span>
+              <span class="expand-icon">+</span>
+            </a>
+            <a href="#" data-toggle="remove">
+              &times;
+            </a>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <form action="{:U('Client/edit')}" method="post"  role="form" class="form form-horizontal validate">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-2 text-right">
+                  <div class="droppable-area">
+                    <span class="red">上传</span>
+                    <input type="file" id="upload" class="custom-file">
+                  </div>
+                </div>
+                <div class="col-sm-10">
+                  <table class="table table-bordered table-striped" id="preview">
+                    <thead>
+                      <tr>
+                        <th width="1%" class="text-center"></th>
+                        <th width="50%">图片名称</th>
+                        <th width="20%">图片状态</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <a href='{$list.picture}' target='_black'>
+                            <img src='{$list.picture}' style='width:30px;'/>
+                          </a>
+                        </td>
+                        <td><span class="text-success">成功</span></td>
+                        <td>
+                          <span class="text-error remove_hand" onclick="$.custom_remove(this);">删除</span>
+                          <input name='picture' type='hidden' value='{$list.picture}'/>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label red">客户名称</label>
+
+              <div class="col-sm-10">
+                <input name="title" value="{$list.title}" type="text" class="form-control" placeholder="请输入客户名称，长度不超过二十个字（必须）">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label red">链接地址</label>
+
+              <div class="col-sm-10">
+                <input name="url" value="{$list.url}" type="text" class="form-control" placeholder="请输入链接地址（必须）">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label">所属服务</label>
+
+              <div class="col-sm-10">
+                <select name="oid" class="form-control red">
+                  <option value="">请选择所属服务</option>
+                  <volist name="list.service" id="vo">
+                    <option value="{$vo.id}">{$vo.title}</option>
+                    </volist>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="hidden">
+              <input name="id" value="{$list.id}" type="hidden">
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-success ajax-post" target-form="form">提 交</button>
+                <button type="reset" class="btn btn-white btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script type="text/javascript" src="__STATIC__/fileupload/vendor/jquery.ui.widget.js"></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.fileupload.js"></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.iframe-transport.js"></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.fileupload-process.js "></script>
+  <script type="text/javascript" src="__STATIC__/fileupload/jquery.fileupload-validate.js"></script>
+  <script type="text/javascript" src="__JS__/custom/custom_file_upload.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function($)
+    {
+      Think.setValue('oid', {$list['oid']|default="0"});
+
+      var url = "{:U('File/uploadImage')}";
+      $.custom_upload('picture', url, 0, '', 1);
+    });
+  </script>
+
+</block>

@@ -1,0 +1,106 @@
+<extend name="Public/base"/>
+
+<block name="body">
+	<div class="row">
+    <div class="span12">
+      <!-- FlexSlider -->
+      <div class="slider1 flexslider">
+        <!-- Items -->
+        <ul class="slides">
+        	<volist name="list.picture" id="vo">
+        		<li>
+	            <!-- Item -->
+		    	    <img src="{$vo.picture}" alt="{$vo.title}" style="width:1170px;height:555px;">
+		    		</li>
+		    	</volist>
+        </ul>
+        <!-- Items End -->
+      </div>
+      <!-- FlexSlider End -->
+
+    </div>
+  </div>
+
+  <div class="row space50"></div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>游记</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <if condition="$item">
+      <volist name="item" key="k" id="vo">
+        <a href="{:U('Item/detail', array('id'=>$vo['id']))}">
+          <div class="span6 square-1">
+            <div class="img-container">
+              <img src="{$vo.picture}" style="max-height:422px;">
+              <div class="img-bg-icon"></div>
+            </div>
+            <h3>{$vo.title}</h3>
+            <div>{$vo.content}</div>
+          </div>
+        </a>
+      </volist>
+    </if>
+  </div>
+
+  <div class="row space50"></div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>随笔</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <if condition="$note">
+      <volist name="note" key="k" id="vo">
+        <a href="{:U('Note/detail', array('id'=>$vo['id']))}">
+          <div class="span4 square-1">
+            <div class="img-container">
+              <img src="{$vo.picture}" style="max-height:274px;">
+              <div class="img-bg-icon"></div>
+            </div>
+            <h3>{$vo.title}</h3>
+            <div>{$vo.content}</div>
+          </div>
+        </a>
+      </volist>
+    </if>
+  </div>
+
+  <div class="row space50"></div>
+
+  <div class="row">
+    <div class="span12">
+      <h2>服务</h2>
+    </div>
+  </div>
+
+  <div class="slider2 flexslider">
+    <ul class="slides">
+      <if condition="$list['merit']">
+        <volist name="list.merit" id="vo">
+          <li>
+            <div class="row">
+              <volist name="vo" id="xo">
+                <a href="{:U('Service/merit', array('id'=>$xo['id']))}">
+                  <div class="span3 square-1">
+                    <div class="img-container">
+                      <img src="{$xo.picture}" class="picture_format">
+                      <div class="img-bg-icon" ></div>
+                    </div>
+                    <h3 >{$xo.title}</h3>
+                    <div>{$xo.content}</div>
+                  </div>
+                </a>
+              </volist>
+            </div>
+          </li>
+        </volist>
+      </if>
+    </ul>
+  </div>
+</block>

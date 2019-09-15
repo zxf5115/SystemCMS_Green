@@ -1,0 +1,125 @@
+<extend name="Public/base"/>
+
+<block name="body">
+  <div class="page-title">
+    <div class="title-env">
+      <h1 class="title">{$meta_title}</h1>
+	  <p class="description">{$list_title}</p>
+    </div>
+    <div class="breadcrumb-env">
+      <ol class="breadcrumb bc-1">
+        <li>
+          <a href="{:U('Index/index')}"><i class="fa-home"></i>首页</a>
+        </li>
+        <volist name="__NAV__" key = "k" id = "vo">
+          <if condition = "1 == $k">
+            <li>
+              <a href="{$vo.url|U}">{$vo.title}</a>
+            </li>
+          </if>
+          <if condition = "2 == $k">
+            <li class="active">
+              <strong>{$vo.title}</strong>
+            </li>
+          </if>
+        </volist>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"></h3>
+          <div class="panel-options">
+            <a href="#" data-toggle="panel">
+              <span class="collapse-icon">&ndash;</span>
+              <span class="expand-icon">+</span>
+            </a>
+            <a href="#" data-toggle="remove">
+              &times;
+            </a>
+          </div>
+        </div>
+        <div class="panel-body">
+
+          <form action="{:U('User/authorization')}" method="post"  role="form" class="form form-horizontal validate">
+
+            <!-- Invoice Entries -->
+            <table class="table table-bordered">
+              <thead>
+                <tr class="no-borders">
+                  <th class="td text-center hidden-xs">编号</th>
+                  <th class="td text-center">角色名称</th>
+                  <th class="td text-center hidden-xs" width="60%">描述</th>
+                  <th class="td text-center">操作</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <volist name="role" key="k" id="vo">
+                  <tr>
+                    <td class="td text-center hidden-xs">{$vo.id}</td>
+                    <td class="td text-center hidden-xs">{$vo.title}</td>
+                    <td class="td hidden-xs">{$vo.description}</td>
+                    <td class="td text-center text-primary text-bold">
+                      <input type="radio" class="role cbr cbr-success" name="rid[]" value="{$vo.id}"/>
+                    </td>
+                  </tr>
+                </volist>
+              </tbody>
+            </table>
+
+            <div class="form-group">
+              <div class="hidden">
+                <input type="hidden" name="uid" value="{:I('uid')}">
+                <input type="hidden" name="batch" value="true">
+              </div>
+            </div>
+
+            <div class="form-group-separator"></div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-success ajax-post" target-form="form">提 交</button>
+                <button type="reset" class="btn btn-white btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script src="__JS__/jquery-validate/jquery.validate.min.js"></script>
+  <script src="__JS__/resizeable.js"></script>
+  <script src="__JS__/inputmask/jquery.inputmask.bundle.js"></script>
+
+  <script type="text/javascript">
+    $(function()
+    {
+      var role_user = '{$role_user}';
+
+      role_user = role_user.split(",");
+
+      $('.role').each(function(i)
+      {
+        for(var x in role_user)
+        {
+          if(parseInt(this.value) == role_user[x])
+          {
+            $(this).attr('checked', true);
+            $(this).parent().parent().addClass('cbr-checked');
+          }
+        }
+      });
+    });
+  </script>
+</block>
+

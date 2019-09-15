@@ -1,0 +1,39 @@
+  <div class="space30"></div>
+  <div class="content">
+    <div class="container site">
+      <div class="row">
+        <div class="span12">
+          <div class="row">
+            <div class="span12 logo">
+              <a href="index.html">
+                <img src="__IMG__/logo.png" alt="">
+              </a>
+              <div class="slogan">追求卓越, 成就梦想</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="space10"></div>
+          </div>
+          <div class="row">
+            <div class="span12">
+              <nav class="navbar">
+                <ul class="nav">
+                  <volist name="channel" id="vo">
+                    <if condition="$vo.url neq 'null'">
+                      <li class="{$vo.active}"><a href="{$vo.url|U}">{$vo.title}</a></li>
+                    <else/>
+                      <li class="{$vo.active}">
+                        <a href="javascript:;">{$vo.title}</a>
+                        <ul>
+                          <volist name="vo.child" id="voo">
+                            <li><a href="{$voo.url|U}">{$voo.title}</a></li>
+                          </volist>
+                        </ul>
+                      </li>
+                    </if>
+                  </volist>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row space10"></div>

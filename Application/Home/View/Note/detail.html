@@ -1,0 +1,150 @@
+<extend name="Public/base"/>
+
+<block name="style">
+  <link href="__CSS__/site.css" rel="stylesheet" />
+  <link href="__STATIC__/css/share.css" rel="stylesheet" />
+</block>
+
+<block name="body">
+  <div class="row">
+    <div class="span9">
+      <h1>{$meta_title}</h1>
+    </div>
+    <div class="span3">
+      <div class="actual-section">
+        <a href="{:U('Index/index')}" >首页</a> > {$meta_title}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span9">
+      <div class="row">
+        <div class="span2">
+          <div class="blog-icon-container hidden-phone">
+            <div class="blog-icon">
+              <i class="fa fa-{$list.icon}"></i>
+            </div>
+          </div>
+          <div class="blog-date">{$list.create_time|friendlyDateChineseStyle}</div>
+
+          <div class="row space5"></div>
+        </div>
+
+        <div id="post-d-info" class="span7">
+          <h2>{$list.title}</h2>
+          <i class="fa fa-user-circle-o"></i> {$list.founder} <i class="fa fa-tags"></i> {$list.label} <i class="fa fa-list"></i> {$list.category}
+          <div>{$list.content}</div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <h2>讨论</h2>
+
+      <if condition="$comment neq ''">
+        <volist name="comment" id="vo">
+          <div class="comment">
+            <div>
+              <span class="comment-date">{$vo.create_time|friendlyDateChineseStyle}</span>
+            </div>
+            {$vo.content}
+          </div>
+        </volist>
+      </if>
+
+      <div class="row space20"></div>
+
+      <div class="comment-title">
+        <h2>讨论</h2>
+      </div>
+
+      <form class="form form-main validate" method="post" action="{:U('Note/comment')}">
+        <div class="row">
+          <div class="span9 gray4">
+            <textarea name="content" placeholder="请输入您的意见"></textarea>
+          </div>
+
+          <div class="hidden">
+            <input type="hidden" name="nid" value="{$list.id}"/>
+          </div>
+
+          <div class="span9">
+            <button type="submit" class="btn f-right ajax-post" target-form="form">提交</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="span3">
+      <h2>搜索</h2>
+      <div class="search-box">
+        <a href="javascript:;" class="search-icon"><i class="fa fa-search"></i></a>
+        <input class="search" name="search" placeholder="请输入内容" >
+      </div>
+
+      <div class="row space30"></div>
+      <h2>分类</h2>
+      <ul class="list-c">
+        <volist name="category" id="vo">
+          <li>
+            <i class="fa fa-chevron-right"></i>
+            <a class="{$set['cid'] == $vo['id'] ? 'active' : ''}" href="{:U('Note/index', array('cid'=>$vo['id']))}">{$vo.title}</a>
+          </li>
+        </volist>
+      </ul>
+
+      <div class="row space30"></div>
+      <h2>标签</h2>
+      <div class="list-t">
+        <volist name="label" id="vo">
+          <a href="{:U('Note/index', array('lid'=>$vo['id']))}">
+            <div class="tag {$set['lid'] == $vo['id'] ? 'active' : ''}">{$vo.title}</div>
+          </a>
+        </volist>
+      </div>
+      <div class="row space30"></div>
+
+      <div id="share"></div>
+      <div class="row space30"></div>
+    </div>
+  </div>
+</block>
+
+<block name="script">
+  <script type="text/javascript">
+    $('document').ready(function()
+    {
+      $('input[name="search"]').val("{$set['search']}");
+
+      $('.fa-search').bind('click', function()
+      {
+        var search = $("input[class='search']").val();
+
+        if(search)
+        {
+          window.location.href="{:U('Note/index')}/search/"+search;
+        }
+        else
+        {
+          window.location.href="{:U('Note/index')}";
+        }
+
+      });
+    });
+
+    $(function()
+    {
+      $("#share").socialShare(
+      {
+        titile:'123131232132131',
+        content: 'FDSASDFASDFASDFASDFSDAFASDF',
+        url:'http://www.jq22.com/jquery-info4685',
+        pic:''
+      });
+    });
+  </script>
+  <script type="text/javascript" src="__STATIC__/js/share.js" charset="utf-8"></script>
+</block>

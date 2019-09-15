@@ -1,0 +1,70 @@
+[ 2017-03-27T16:42:14+08:00 ] ::1 /index.php?s=/Public/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011652s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011820s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:42:21+08:00 ] ::1 /img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004409s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004645s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:42:21+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002332s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:42:21+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002523s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002706s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:42:29+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001765s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001913s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:42:31+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001997s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002205s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:42:35+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002657s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:42:38+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002360s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002531s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:43:02+08:00 ] ::1 /Public/Home/css/background.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002277s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+
+[ 2017-03-27T16:43:02+08:00 ] ::1 /Public/Home/font/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001771s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001928s ]
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' E:\Workspace\PHP\Demo\Application\Common\Common\api.php 第 42 行.
+

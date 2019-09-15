@@ -1,0 +1,1322 @@
+[ 2018-06-16T09:01:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.076785s ]
+INFO: [ app_init ] --END-- [ RunTime:0.076945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.025313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025394s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0571s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0052s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0082s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0071s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0535s ]
+SQL: SELECT `update_time` FROM `unique_visitor` WHERE `status` = 1 AND `ip_address` = '2130706433' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0054s ]
+NOTIC: [8] Undefined index: validate E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0043s ]
+SQL: INSERT INTO `unique_visitor` (`browser`,`ip_address`,`system`,`language`,`update_time`,`status`,`create_time`,`founder`) VALUES ('Firefox','2130706433','简体中文','Windows','1529110890','1','1529110889','游客') [ RunTime:0.0713s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `publicity` [ RunTime:0.0905s ]
+SQL: SELECT `id`,`title`,`picture` FROM `publicity` WHERE `status` = 1 ORDER BY sort ASC LIMIT 5   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0368s ]
+SQL: SELECT `id` FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0670s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0504s ]
+SQL: SELECT `id`,`title`,`content` FROM `note` WHERE `status` = 1 ORDER BY create_time DESC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0582s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 2   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.217854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.217926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015078s ]
+
+[ 2018-06-16T09:01:54+08:00 ] 127.0.0.1 /Home/Item/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0239s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0084s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0121s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0163s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,9   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\ItemController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0813s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 1 ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0374s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0057s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0044s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0045s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0084s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0053s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0057s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0061s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2018-06-16T09:01:54+08:00 ] 127.0.0.1 /Home/Item/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+
+[ 2018-06-16T09:01:56+08:00 ] 127.0.0.1 /Home/Note/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000956s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0119s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `note` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `note` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\NoteController.class.php 第 75 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0393s ]
+SQL: SELECT `id`,`title` FROM `label` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0095s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0300s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0072s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0113s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0088s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0099s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0075s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0050s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0054s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0048s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0066s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0066s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0046s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0063s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0054s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0051s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0044s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0045s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0061s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0055s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0050s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0057s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0046s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0043s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0066s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0047s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0046s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0060s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004612s ]
+
+[ 2018-06-16T09:01:56+08:00 ] 127.0.0.1 /Home/Note/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001619s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001788s ]
+
+[ 2018-06-16T09:01:57+08:00 ] 127.0.0.1 /Home/Service/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001866s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0182s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0057s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0643s ]
+SQL: SELECT `id`,`title`,`url`,`picture` FROM `client` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2018-06-16T09:01:57+08:00 ] 127.0.0.1 /Home/Service/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+
+[ 2018-06-16T09:01:59+08:00 ] 127.0.0.1 /Home/About/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0179s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0476s ]
+SQL: SELECT * FROM `about` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `person` [ RunTime:0.0525s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `person` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-06-16T09:01:59+08:00 ] 127.0.0.1 /Home/About/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001476s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001652s ]
+
+[ 2018-06-16T09:02:00+08:00 ] 127.0.0.1 /Home/Contact/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0189s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = 0 ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '1' ORDER BY id ASC  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '2' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '3' ORDER BY id ASC  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0048s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '5' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `channel` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`title`,`url` FROM `channel` WHERE `status` = 1 AND `pid` = '6' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: list E:\Workspace\PHP\QingYun\Application\Home\Controller\ContactController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-06-16T09:02:00+08:00 ] 127.0.0.1 /Home/Contact/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001563s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001746s ]
+
+[ 2018-06-16T09:02:05+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000953s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0161s ]
+SQL: SELECT `update_time` FROM `unique_visitor` WHERE `status` = 1 AND `ip_address` = '2130706433' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0077s ]
+NOTIC: [8] Undefined index: validate E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0048s ]
+SQL: INSERT INTO `unique_visitor` (`browser`,`ip_address`,`system`,`language`,`update_time`,`status`,`create_time`,`founder`) VALUES ('Firefox','2130706433','简体中文','Windows','1529110925','1','1529110925','游客') [ RunTime:0.0649s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `publicity` [ RunTime:0.0191s ]
+SQL: SELECT `id`,`title`,`picture` FROM `publicity` WHERE `status` = 1 ORDER BY sort ASC LIMIT 5   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0107s ]
+SQL: SELECT `id` FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0134s ]
+SQL: SELECT `id`,`title`,`content` FROM `note` WHERE `status` = 1 ORDER BY create_time DESC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0083s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 2   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-06-16T09:02:06+08:00 ] 127.0.0.1 /Home/Index/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001292s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001405s ]
+
+[ 2018-06-16T09:05:20+08:00 ] 127.0.0.1 /Home/Item/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001231s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0117s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,9   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\ItemController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0126s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 1 ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0103s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0061s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0047s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0071s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0045s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0047s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0057s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0045s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-06-16T09:05:30+08:00 ] 127.0.0.1 /Home/Note/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001812s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0197s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `note` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `note` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\NoteController.class.php 第 75 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0114s ]
+SQL: SELECT `id`,`title` FROM `label` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0087s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0134s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0077s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0055s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0074s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0048s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0067s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0081s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0051s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0102s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0051s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0081s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0054s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0081s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0058s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0075s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0051s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0050s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0060s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0049s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0076s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0050s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0051s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0060s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0052s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0059s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0056s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0052s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2018-06-16T09:05:39+08:00 ] 127.0.0.1 /Home/Service/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001499s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0088s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0125s ]
+SQL: SELECT `id`,`title`,`url`,`picture` FROM `client` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-06-16T09:05:49+08:00 ] 127.0.0.1 /Home/About/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000955s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `about` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `person` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `person` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2018-06-16T09:05:56+08:00 ] 127.0.0.1 /Home/Contact/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8] Undefined variable: list E:\Workspace\PHP\QingYun\Application\Home\Controller\ContactController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-06-16T09:07:23+08:00 ] 127.0.0.1 /Home/About/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002322s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `about` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `person` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `person` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-06-16T09:07:33+08:00 ] 127.0.0.1 /Home/Service/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`title`,`url`,`picture` FROM `client` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2018-06-16T09:07:42+08:00 ] 127.0.0.1 /Home/Note/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0176s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `note` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `note` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\NoteController.class.php 第 75 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0151s ]
+SQL: SELECT `id`,`title` FROM `label` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0100s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0083s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0084s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0043s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0043s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0073s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0042s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0039s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0065s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0051s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0057s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0041s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0044s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0055s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0051s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0045s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0068s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0047s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0064s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0051s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0046s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0068s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0048s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0049s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0059s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0057s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0055s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0055s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-06-16T09:09:45+08:00 ] 127.0.0.1 /Home/Item/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001338s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,9   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\ItemController.class.php 第 39 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 1 ORDER BY id ASC  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0093s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0095s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0045s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0054s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0045s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '2' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0039s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2','1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2018-06-16T09:10:07+08:00 ] 127.0.0.1 /Home/Item/detail/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `item` WHERE `status` = 1 AND `id` = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0093s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0110s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 1 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0104s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('2') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0093s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('1') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\ItemController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0065s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 1 ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`title` FROM `label` WHERE `status` = 1 AND `type` = 1 ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 5   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2018-06-16T09:10:07+08:00 ] 127.0.0.1 /Home/Item/detail/id/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+
+[ 2018-06-16T09:10:54+08:00 ] 127.0.0.1 /Home/Note/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0206s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `note` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `note` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\NoteController.class.php 第 75 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0118s ]
+SQL: SELECT `id`,`title` FROM `label` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0072s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0084s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0045s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0070s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0041s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0050s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '13' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0053s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0046s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0063s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0054s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '12' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0047s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0075s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0050s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0082s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '3' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0060s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0085s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '4' ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0087s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0070s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('3') ORDER BY create_time DESC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0069s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0073s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '5' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0118s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0105s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '6' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0060s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0055s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '7' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0047s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0077s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '8' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0045s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0046s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '9' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+NOTIC: [8] Undefined index: picture E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 110 行.
+NOTIC: [8] Undefined index: label E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 131 行.
+NOTIC: [8] Undefined index: category E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\1576f051a695d88c69f59a2b72a18878.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2018-06-16T09:11:11+08:00 ] 127.0.0.1 /Home/Note/detail/id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000951s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `note` WHERE `status` = 1 AND `id` = '14' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category_relevance` [ RunTime:0.0088s ]
+SQL: SELECT `cid` FROM `category_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `label_relevance` [ RunTime:0.0097s ]
+SQL: SELECT `lid` FROM `label_relevance` WHERE `status` = 1 AND `type` = 2 AND `oid` = '14' ORDER BY id ASC  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0077s ]
+SQL: SELECT `title` FROM `category` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0078s ]
+SQL: SELECT `title` FROM `label` WHERE `status` = 1 AND `id` IN ('4') ORDER BY create_time DESC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: vo E:\Workspace\PHP\QingYun\Application\Home\Controller\NoteController.class.php 第 192 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`title` FROM `category` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `label` [ RunTime:0.0064s ]
+SQL: SELECT `id`,`title` FROM `label` WHERE `status` = 1 AND `type` = 2 ORDER BY id ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note_comment` [ RunTime:0.0678s ]
+SQL: SELECT `id`,`nid`,`content`,`reply_id`,`by_reply_id`,`create_time`,`founder` FROM `note_comment` WHERE `status` = 1 AND `nid` = '14' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined variable: set E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\d19311be9b5c0b2a62635144bc79cf1f.php 第 179 行.
+NOTIC: [8] Undefined variable: set E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\d19311be9b5c0b2a62635144bc79cf1f.php 第 179 行.
+NOTIC: [8] Undefined variable: set E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\d19311be9b5c0b2a62635144bc79cf1f.php 第 187 行.
+NOTIC: [8] Undefined variable: set E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\d19311be9b5c0b2a62635144bc79cf1f.php 第 187 行.
+NOTIC: [8] Undefined variable: set E:\Workspace\PHP\QingYun\Application\Runtime\Cache\Home\d19311be9b5c0b2a62635144bc79cf1f.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2018-06-16T09:11:12+08:00 ] 127.0.0.1 /Home/Note/detail/id/img/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+
+[ 2018-06-16T09:11:37+08:00 ] 127.0.0.1 /Home/Service/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0075s ]
+SQL: SELECT `id`,`title`,`url`,`picture` FROM `client` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-06-16T09:12:14+08:00 ] 127.0.0.1 /Home/About/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `about` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `about` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `person` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `person` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-06-16T09:47:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0649s ]
+SQL: SELECT `update_time` FROM `unique_visitor` WHERE `status` = 1 AND `ip_address` = '2130706433' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined index: validate E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\Workspace\PHP\QingYun\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `unique_visitor` [ RunTime:0.0044s ]
+SQL: INSERT INTO `unique_visitor` (`browser`,`ip_address`,`system`,`language`,`update_time`,`status`,`create_time`,`founder`) VALUES ('Firefox','2130706433','简体中文','Windows','1529113647','1','1529113647','游客') [ RunTime:0.0361s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `publicity` [ RunTime:0.0106s ]
+SQL: SELECT `id`,`title`,`picture` FROM `publicity` WHERE `status` = 1 ORDER BY sort ASC LIMIT 5   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0112s ]
+SQL: SELECT `id` FROM `service` WHERE `status` = 1 AND `display` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `merit` [ RunTime:0.0297s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `merit` WHERE `status` = 1 AND `oid` = '1' ORDER BY id ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 50 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: x E:\Workspace\PHP\QingYun\Application\Home\Controller\IndexController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `note` [ RunTime:0.0114s ]
+SQL: SELECT `id`,`title`,`content` FROM `note` WHERE `status` = 1 ORDER BY create_time DESC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Use of undefined constant get_uid - assumed 'get_uid' E:\Workspace\PHP\QingYun\ThinkPHP\Common\functions.php 第 588 行.
+SQL: SHOW COLUMNS FROM `item` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`title`,`content`,`picture` FROM `item` WHERE `status` = 1 ORDER BY create_time DESC LIMIT 2   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+NOTIC: [8] Undefined variable: tag_tags E:\Workspace\PHP\QingYun\Application\Common\Common\custom_filter.php 第 84 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+

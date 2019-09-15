@@ -1,0 +1,169 @@
+<!-- 标题栏 -->
+<div class="main-title">
+ 
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>{$addons_config.title}</h2>   
+  </div>
+
+  <div class="panel-body">
+    <div class="table-responsive">   
+      <table class="col-sm-12">
+        <tr>
+          <td class="pull-left col-sm-6">
+            <table class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>                    
+                  <th class="text-center" colspan="2">服务器参数信息</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <th>服务器域名/IP地址</th> 
+                  <td>
+                    {$_SERVER['SERVER_NAME']}
+                    (
+                      <if condition="DIRECTORY_SEPARATOR eq '/'">
+                        {$_SERVER['SERVER_ADDR']}
+                      <else/>
+                        {:@gethostbyname($_SERVER['SERVER_NAME'])}
+                      </if>
+                    )
+                  </td> 
+                </tr>
+                <tr>
+                  <th>服务器操作系统</th> 
+                  <td>{$Think.const.PHP_OS}</td>
+                </tr>
+                <tr>
+                  <th>服务器解译引擎</th> 
+                  <td>{:var_export($_SERVER['SERVER_SOFTWARE'], true)}</td>
+                </tr>
+                <tr>
+                  <th>ThinkPHP版本</th> 
+                  <td>{$Think.VERSION}</td>
+                </tr>
+                <tr>
+                  <th>PHP版本</th> 
+                  <td>{:phpversion()}</td>
+                </tr>
+                <tr>
+                  <th>MYSQL版本</th> 
+                  <php>
+                    $system_info_mysql = M()->query("select version() as v;");
+                  </php>
+                  <td>{$system_info_mysql.0.v}</td>
+                </tr>
+                <tr>
+                  <th>源代码路径</th> 
+                  <td>{:print_r(SITE_DIR, true)}</td>
+                </tr>
+                <tr>
+                  <th>上传限制</th> 
+                  <td>{:ini_get('upload_max_filesize')}</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td class="pull-right col-sm-6">
+            <table class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>                    
+                  <th class="text-center" colspan="2">服务器实时信息</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>服务器当前时间</th> 
+                  <td>{$sysinfo.stime}</td>
+                </tr>
+                <tr>
+                  <th>服务器已运行时间</th> 
+                  <td>{$sysinfo.uptime}</td>
+                </tr>
+                <tr>
+                  <th>总空间</th> 
+                  <td>{$sysinfo.DiskTotal}&nbsp;GB</td>
+                </tr>
+                <tr>
+                  <th>
+                    <span title="显示的是网站所在的目录的可用空间，非服务器上所有磁盘之可用空间！">可用空间</span>
+                  </th> 
+                  <td>{$sysinfo.freeSpace}&nbsp;GB</td>
+                </tr>
+                <tr>
+                  <th>CPU型号</th> 
+                  <td>[{$sysinfo.cpu.num}核]:{$sysinfo.cpu.model}</td>
+                </tr>
+                <tr>
+                  <th>内存使用状况</th> 
+                  <td>
+                    物理内存：共有&nbsp;<font color='#CC0000'>{$sysinfo.TotalMemory}</font>&nbsp;&nbsp;&nbsp; 
+                    已用&nbsp;<font color='#CC0000'><span>{$sysinfo.UsedMemory}</span></font>&nbsp;&nbsp;&nbsp;
+                    空闲&nbsp;<font color='#CC0000'><span>{$sysinfo.FreeMemory}</span></font>&nbsp;&nbsp;&nbsp;
+                    使用率&nbsp;<span>{$sysinfo.memPercent}</span>
+                    
+                    <div class="progress" style="margin:5px 0 0;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {$sysinfo.memPercent}">
+                        <span class="sr-only">40% Complete (success)</span>
+                      </div>
+                    </div>
+
+                    <if condition="$sysinfo['CachedMemory'] gt 0">
+                      Cache化内存为&nbsp;<span>{$sysinfo.CachedMemory}</span>&nbsp;&nbsp;&nbsp; 
+                      使用率&nbsp;<span>{$sysinfo.memCachedPercent}</span>&nbsp;%&nbsp;|&nbsp;
+                      Buffers缓冲为&nbsp;<span>{$sysinfo.Buffers}</span>
+                      <div class="progress" style="margin:5px 0">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {$sysinfo.barmemCachedPercent}">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+
+
+                      真实内存使用&nbsp;<span>{$sysinfo.memRealUsed}</span>&nbsp;&nbsp;&nbsp;
+                      真实内存空闲&nbsp;<span>{$sysinfo.memRealFree}</span>&nbsp;&nbsp;&nbsp; 
+                      使用率&nbsp;<span>{$sysinfo.memRealPercent}</span> %
+                      <div class="progress" style="margin:5px 0">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {$sysinfo.barmemRealPercent}">
+                          <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                      </div>
+                    </if>
+                  </td>
+                </tr>
+                <if condition="$sysinfo['TotalSwap'] gt 0">
+                  <tr>
+                    <th>SWAP区</th> 
+                    <td>
+                      共有&nbsp;</span>{$sysinfo.TotalSwap}</span>&nbsp;&nbsp;&nbsp; 
+                      已使用&nbsp;<span>{$sysinfo.swapUsed}</span>&nbsp;&nbsp;&nbsp; 
+                      空闲&nbsp;<span>{$sysinfo.swapFree}</span>&nbsp;&nbsp;&nbsp;
+                      使用率&nbsp;<span>{$sysinfo.swapPercent}</span> %
+
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {$sysinfo.barswapPercent}">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </if>
+                <tr>
+                  <th>系统平均负载</th> 
+                  <td>{$sysinfo.loadAvg}</td>
+                </tr>
+                <if condition="!empty($sysinfo['net_state'])">
+                  <tr>
+                    <th>网络情况</th>
+                    <td>{$sysinfo.net_state}</td>
+                  </tr>
+                </if>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>   
+    </div><!-- /.table-responsive --> 
+  </div><!-- /.panel-body -->
+</div><!-- /.panel --> 
