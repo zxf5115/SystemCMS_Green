@@ -20,10 +20,6 @@
 
 ![](https://github.com/zxf5115/SystemCMS_Green/blob/master/Preview/火狐截图_2018-06-16T01-11-19.262Z.png)
 
-![](https://github.com/zxf5115/SystemCMS_Green/blob/master/Preview/火狐截图_2018-06-16T01-16-56.575Z.png)
-
-![](https://github.com/zxf5115/SystemCMS_Green/blob/master/Preview/火狐截图_2018-06-16T01-17-22.292Z.png)
-
 ![](https://github.com/zxf5115/SystemCMS_Green/blob/master/Preview/火狐截图_2019-09-15T13-45-06.434Z.png)
 
 ![](https://github.com/zxf5115/SystemCMS_Green/blob/master/Preview/火狐截图_2019-09-15T13-45-21.552Z.png)
